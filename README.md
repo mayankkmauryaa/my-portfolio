@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: 
+**URL**: https://github.com/mayankkmauryaa/my-portfolio
 
 ## How can I edit this code?
 
@@ -18,10 +18,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone <https://github.com/mayankkmauryaa/my-portfolio>
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd <my-portfolio>
 
 # Step 3: Install the necessary dependencies.
 npm i
