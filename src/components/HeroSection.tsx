@@ -58,14 +58,14 @@ const HeroSection = () => {
                                         background: "linear-gradient(45deg, #1a1a1a, #2a2a2a)"
                                     }}>
                                     {/* Profile image with a position offset to focus on the person */}
-                                    {/* <img
+                                    <img
                                         src="src\assets\maya indiagate.JPG"
                                         alt="Mayank Maurya"
                                         className="object-cover w-full h-full object-center"
                                         style={{
                                             objectPosition: "right 30%",
                                         }}
-                                    /> */}
+                                    />
                                 </div>
 
                                 {/* Decorative border */}
