@@ -59,7 +59,7 @@ const HeroSection = () => {
                                     }}>
                                     {/* Profile image with a position offset to focus on the person */}
                                     <img
-                                        src="/assets/maya%20indiagate-Dh46eY0t.JPG"
+                                        src="src\assets\maya indiagate.JPG"
                                         alt="Mayank Maurya"
                                         className="object-cover w-full h-full object-center"
                                         style={{
