@@ -9,7 +9,7 @@ const HeroSection = () => {
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-12 md:mb-0 z-10">
                         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-                            Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Mayank </span>
+                            Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Mayank Maurya</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-300 mb-8">
                             Aspiring tech consultant and Computer Science undergraduate with a passion for solving real-world problems.
@@ -59,7 +59,7 @@ const HeroSection = () => {
                                     }}>
                                     {/* Profile image with a position offset to focus on the person */}
                                     <img
-                                        src="dist\assets\maya indiagate-Dh46eY0t.JPG"
+                                        src="src\assets\maya indiagate.JPG"
                                         alt="Mayank Maurya"
                                         className="object-cover w-full h-full object-center"
                                         style={{
