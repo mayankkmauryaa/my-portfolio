@@ -5,17 +5,24 @@ const SkillsSection = () => {
     const skillCategories = [
         {
             title: "Languages",
-            skills: ["Python", "Java", "JavaScript"],
+            skills: ["Python", "Java", "JavaScript", "C"],
             icon: "💻"
         },
         {
             title: "Web Development",
-            skills: ["React.js", "HTML", "CSS", "Tailwind CSS", "Node.js"],
+            skills: [
+                "React.js", 
+                "HTML", "CSS",
+                "Tailwind CSS", "Node.js"
+            ],
             icon: "🌐"
         },
         {
-            title: "Backend & Tools",
-            skills: ["FastAPI", "Firebase", "Redis", "Git", "Docker", "AWS S3"],
+            title: "Backend & Tools(just known)",
+            skills: ["FastAPI", "Firebase",
+                // "Redis", 
+                "PostMan",
+                "Git", "Docker", "AWS S3"],
             icon: "🔧"
         },
         {
@@ -25,7 +32,7 @@ const SkillsSection = () => {
         },
         {
             title: "Core",
-            skills: ["Algorithms & Data Structures", "Machine Learning (Basics)", "JAVA OOPS", "CN", "CO", "DBMS", "SQL"],
+            skills: ["Algorithms & Data Structures", "Machine Learning (Basics)", "JAVA OOPS", "CN", "CO", "DBMS", "SQL Queries"],
             icon: "🧠"
         }
     ];
