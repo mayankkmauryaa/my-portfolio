@@ -59,7 +59,7 @@ const HeroSection = () => {
                                     }}>
                                     {/* Profile image with a position offset to focus on the person */}
                                     <img
-                                        src="src\assets\maya indiagate.JPG"
+                                        src="https://ik.imagekit.io/mayankmaurya/maya%20indiagate.JPG?updatedAt=1748136188497"
                                         alt="Mayank Maurya"
                                         className="object-cover w-full h-full object-center"
                                         style={{
