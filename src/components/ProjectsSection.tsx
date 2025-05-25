@@ -4,11 +4,11 @@ import { Badge } from '@/components/ui/badge';
 
 const ProjectsSection = () => {
     const projects = [
-        {
-            title: "Career Guidance Toolkit",
-            description: "Web app using React.js, Tailwind CSS, FastAPI, and AI to recommend careers based on user interests.",
-            tags: ["React.js", "Tailwind CSS", "FastAPI", "AI"]
-        },
+        // {
+        //     title: "Career Guidance Toolkit",
+        //     description: "Web app using React.js, Tailwind CSS, FastAPI, and AI to recommend careers based on user interests.",
+        //     tags: ["React.js", "Tailwind CSS", "FastAPI", "AI"]
+        // },
         {
             title: "AI-Powered Code Generator",
             description: "Tool built with FastAPI, React.js, OpenAI API, and Electron.js for generating and explaining code.",
