@@ -203,7 +203,8 @@ const ContactSection = () => {
             {showScrollButton && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-8 left-8 z-50 bg-white text-blue-600 hover:bg-blue-100 shadow-lg p-3 rounded-full transition-colors border border-blue-200"
+                    
+                    className="fixed bottom-4 md:bottom-8 left-4 md:left-8 z-50 bg-white text-blue-600 hover:bg-blue-100 shadow-lg p-3 rounded-full transition-colors border border-blue-200"
                     aria-label="Scroll to top"
                 ><svg
                     xmlns="http://www.w3.org/2000/svg"

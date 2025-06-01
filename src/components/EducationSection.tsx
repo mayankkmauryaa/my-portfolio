@@ -46,6 +46,12 @@ const EducationSection = () => {
             date: "Apr 2025",
             issuer: "JPMorgan Chase",
             url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ZtgA28qyexifyEdHE/YD2kY95RQxQtXxFTS_ZtgA28qyexifyEdHE_3p85ZZGCqAbKh2cMP_1744039941924_completion_certificate.pdf"
+        },
+        {
+            title: "JPMorgan Chase & Co. - Quantitative Research Job Simulation",
+            date: "May 2025",
+            issuer: "JPMorgan Chase & Co.",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/bWqaecPDbYAwSDqJy_Sj7temL583QAYpHXD_3p85ZZGCqAbKh2cMP_1748516765112_completion_certificate.pdf"
         }
     ];
 
@@ -65,7 +71,7 @@ const EducationSection = () => {
                                 rel="noopener noreferrer"
                                 className="block"
                             >
-                                <Card className="reveal" style={{ transitionDelay: `${index * 100}ms` }}>
+                                <Card className="reveal h-auto flex flex-col justify-between" style={{ transitionDelay: `${index * 100}ms` }}>
                                     <CardHeader>
                                         <CardTitle>{education.degree}</CardTitle>
                                     </CardHeader>
@@ -90,7 +96,7 @@ const EducationSection = () => {
                                 rel="noopener noreferrer"
                                 className="block"
                             >
-                                <Card className="reveal" style={{ transitionDelay: `${(index + 2) * 100}ms` }}>
+                                <Card className="reveal h-auto flex flex-col justify-between" style={{ transitionDelay: `${(index + 2) * 100}ms` }}>
                                     <CardContent className="p-6">
                                         <h4 className="font-bold mb-1">{certification.title}</h4>
                                         <p className="text-sm text-gray-600">
@@ -102,6 +108,7 @@ const EducationSection = () => {
                         ))}
                     </div>
                 </div>
+                
             </div>
         </section>
     );
