@@ -220,17 +220,13 @@ const AboutSection = () => {
 
                                                 {/* <GitHubCalendar username="mayankkmauryaa" /> */}
                                                 {/* GitHub Contribution Calendar */}
-                                                <div className="overflow-x-auto p-2 border dark:border-gray-700 rounded-lg bg-gray-100 dark:bg-gray-900/50">
+                                                <div className="overflow-x-auto p-2 border dark:border-gray-700 rounded-lg bg-gray-100 dark:bg-gray-900/50 text-gray-800 dark:text-gray-200">
                                                     <GitHubCalendar
                                                         username="mayankkmauryaa"
                                                         blockSize={12}
                                                         blockMargin={4}
                                                         colorScheme="light"
                                                         fontSize={14}
-                                                    // theme={{
-                                                    // light: ['#e5e7eb', '#86efac', '#4ade80', '#22c55e'],
-                                                    // dark: ['#374151', '#166534', '#16a34a', '#22c55e'],
-                                                    // }}
                                                     />
                                                 </div>
 

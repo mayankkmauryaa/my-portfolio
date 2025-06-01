@@ -25,21 +25,29 @@ const ContactSection = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
 
-        // Show success toast
+        const { name, email, message } = formData;
+
+        if (!name || !email || !message) {
+            toast({
+                title: "Please fill all fields",
+                description: "All form fields are required before submission.",
+                variant: "destructive",
+            });
+            return;
+        }
+
+        // Log or send data
         toast({
             title: "Message sent!",
             description: "Thanks for reaching out. I'll get back to you soon.",
+            className: "bg-white text-black dark:bg-gray-800 dark:text-white",
         });
 
-        // Reset form
-        setFormData({
-            name: '',
-            email: '',
-            message: ''
-        });
+
+        setFormData({ name: '', email: '', message: '' });
     };
+
     // scroll button when 300px scrolled
     useEffect(() => {
         const handleScroll = () => {
@@ -203,7 +211,7 @@ const ContactSection = () => {
             {showScrollButton && (
                 <button
                     onClick={scrollToTop}
-                    
+
                     className="fixed bottom-4 md:bottom-8 left-4 md:left-8 z-50 bg-white text-blue-600 hover:bg-blue-100 shadow-lg p-3 rounded-full transition-colors border border-blue-200"
                     aria-label="Scroll to top"
                 ><svg

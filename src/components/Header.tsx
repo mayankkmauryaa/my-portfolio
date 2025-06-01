@@ -58,7 +58,7 @@ const Header = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                {mobileMenuOpen && (
+                {/* {mobileMenuOpen && (
                     <div className="md:hidden mt-4 bg-black rounded-lg shadow-lg p-4 absolute left-4 right-4">
                         <nav className="flex flex-col space-y-3">
                             <a
@@ -101,7 +101,44 @@ const Header = () => {
                             </Button>
                         </nav>
                     </div>
+                )} */}
+                {/* Mobile Menu */}
+                {mobileMenuOpen && (
+                    <div className="md:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
+                        <div className="absolute top-6 right-6">
+                            <button
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="text-white hover:text-gray-300 transition"
+                            >
+                                ✕
+                            </button>
+                        </div>
+                        <div className="bg-white dark:bg-gray-900 rounded-lg shadow-xl p-6 m-6 mt-20 space-y-4">
+                            <nav className="flex flex-col space-y-4 text-center">
+                                {[
+                                    { href: '#about', label: 'About' },
+                                    { href: '#skills', label: 'Skills' },
+                                    { href: '#projects', label: 'Projects' },
+                                    { href: '#education', label: 'Education' },
+                                    { href: '#contact', label: 'Contact' }
+                                ].map((item) => (
+                                    <a
+                                        key={item.href}
+                                        href={item.href}
+                                        className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg transition-colors"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                        {item.label}
+                                    </a>
+                                ))}
+                                <Button className="w-full" asChild onClick={() => setMobileMenuOpen(false)}>
+                                    <a href="#contact">Get In Touch</a>
+                                </Button>
+                            </nav>
+                        </div>
+                    </div>
                 )}
+
             </div>
         </header>
     );
