@@ -1,4 +1,4 @@
-
+import { useEffect, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -7,6 +7,24 @@ import GitHubCalendar from 'react-github-calendar';
 
 
 const AboutSection = () => {
+    const [repoCount, setRepoCount] = useState(null);
+    const [calendarLoaded, setCalendarLoaded] = useState(false);
+
+    useEffect(() => {
+        fetch('https://api.github.com/users/mayankkmauryaa')
+            .then((res) => res.json())
+            .then((data) => {
+                setRepoCount(data.public_repos);
+            })
+            .catch((err) => console.error('Error fetching GitHub data', err));
+    }, []);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setCalendarLoaded(true);
+        }, 1200); // adjust delay as needed
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <section id="about" className="section-padding dark:bg-gray-900 bg-white">
 
@@ -82,30 +100,6 @@ const AboutSection = () => {
                                     </h4>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        {/* <div className="dark:bg-gray-900/50 bg-gray-100 p-5 rounded-lg border dark:border-gray-700">
-                                            <div className="flex items-center justify-between mb-2">
-                                                <span className="text-sm font-semibold dark:text-gray-300">Problems Solved</span>
-                                                <span className="text-sm font-bold text-green-600 dark:text-green-400">350+</span>
-                                            </div>
-                                            <Progress value={67} className="h-2 dark:bg-gray-700" />
-
-                                            <div className="mt-4 space-y-2">
-                                                <div className="flex justify-between items-center">
-                                                    <span className="text-xs dark:text-gray-400">Easy</span>
-                                                    <span className="text-xs font-medium dark:text-gray-300">200+</span>
-                                                </div>
-                                                <div className="flex justify-between items-center">
-                                                    <span className="text-xs dark:text-gray-400">Medium</span>
-                                                    <span className="text-xs font-medium dark:text-gray-300">140+</span>
-                                                </div>
-                                                <div className="flex justify-between items-center">
-                                                    <span className="text-xs dark:text-gray-400">Hard</span>
-                                                    <span className="text-xs font-medium dark:text-gray-300">10+</span>
-                                                </div>
-                                            </div>
-
-                                        </div> */}
-
                                         {/* Submission Heatmap */}
                                         <div className="mt-6">
                                             <h5 className="text-base font-semibold mb-2 dark:text-gray-300">Submission Heatmap</h5>
@@ -182,21 +176,41 @@ const AboutSection = () => {
 
 
                                 <div>
-                                    <h4 className="text-xl font-semibold mb-4 dark:text-white flex items-center gap-2">
-                                        <a href="https://github.com/mayankkmauryaa">
-                                            <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 24 24">
-                                                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
-                                            </svg>
-                                        </a>
-                                        <a href="https://github.com/mayankkmauryaa">GitHub Activity</a>
-                                    </h4>
+                                    <div className="flex justify-between items-center mb-4">
+                                        <h4 className="text-xl font-semibold dark:text-white flex items-center gap-2">
+                                            <a href="https://github.com/mayankkmauryaa">
+                                                <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            <a href="https://github.com/mayankkmauryaa">GitHub Activity</a>
+                                        </h4>
+
+                                        <div>
+                                            <img
+                                                src="https://img.shields.io/github/followers/mayankkmauryaa?label=Followers&style=social"
+                                                alt="GitHub Followers"
+                                            />
+                                        </div>
+                                    </div>
+
 
                                     <a href="https://github.com/mayankkmauryaa">
 
                                         <div className="dark:bg-gray-900/50 bg-gray-100 p-5 rounded-lg border dark:border-gray-700">
                                             <div className="flex justify-between items-center mb-4">
                                                 <span className="font-semibold dark:text-gray-300">Contribution Activity</span>
-                                                <span className="text-sm font-medium text-green-600 dark:text-green-400">40+ repositories</span>
+                                                {/* <img
+                                                    src="https://img.shields.io/github/repos/mayankkmauryaa?label=Public%20Repos&style=flat-square&logo=github"
+                                                    alt="GitHub Repositories Count"
+                                                    className="h-5"
+                                                /> */}
+
+                                                <span className="text-sm font-medium text-green-600 dark:text-green-400">
+                                                    {repoCount !== null ? `${repoCount} +repositories` : 'Loading...'}
+                                                </span>
+
+
                                             </div>
 
                                             {/* GitHub contribution graph representation */}
@@ -216,52 +230,34 @@ const AboutSection = () => {
                                                         alt="GitHub Stats"
                                                         className="w-full md:w-1/2 max-w-xl"
                                                     />
+
                                                 </div>
 
                                                 {/* <GitHubCalendar username="mayankkmauryaa" /> */}
                                                 {/* GitHub Contribution Calendar */}
                                                 <div className="overflow-x-auto p-2 border dark:border-gray-700 rounded-lg bg-gray-100 dark:bg-gray-900/50 text-gray-800 dark:text-gray-200">
-                                                    <GitHubCalendar
-                                                        username="mayankkmauryaa"
-                                                        blockSize={12}
-                                                        blockMargin={4}
-                                                        colorScheme="light"
-                                                        fontSize={14}
-                                                    />
+
+                                                    {!calendarLoaded && (
+                                                        <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                                            Loading GitHub Calendar...
+                                                        </div>
+                                                    )}
+
+                                                    <div style={{ display: calendarLoaded ? 'block' : 'none' }}>
+                                                        <GitHubCalendar
+                                                            username="mayankkmauryaa"
+                                                            blockSize={12}
+                                                            blockMargin={4}
+                                                            colorScheme="light"
+                                                            fontSize={14}
+                                                            // onLoad={setCalendarLoaded(true)}
+                                                        />
+                                                    </div>
                                                 </div>
 
-
-
-
-                                                {/* {Array.from({ length: 51 }).map((_, i) => (
-                                                <div
-                                                    key={i}
-                                                    className={`w-3 h-3 rounded-sm ${i % 4 === 0 ? 'bg-green-300 dark:bg-green-700' :
-                                                        i % 7 === 0 ? 'bg-green-500 dark:bg-green-500' :
-                                                            i % 11 === 0 ? 'bg-green-600 dark:bg-green-400' :
-                                                                'bg-gray-200 dark:bg-gray-700'
-                                                        }`}
-                                                    title={`${i % 4 === 0 ? '2 contributions' :
-                                                        i % 7 === 0 ? '5 contributions' :
-                                                            i % 11 === 0 ? '8 contributions' :
-                                                                'No contributions'
-                                                        }`}
-                                                />
-                                            ))} */}
                                             </div>
 
                                             <div className="flex justify-between text-xs dark:text-gray-400">
-                                                {/* <span>Last Year</span>
-                                            <div className="flex gap-2 items-center">
-                                                <span>Less</span>
-                                                <div className="flex gap-[2px]">
-                                                    <div className="w-2 h-2 rounded-sm bg-gray-200 dark:bg-gray-700" />
-                                                    <div className="w-2 h-2 rounded-sm bg-green-300 dark:bg-green-700" />
-                                                    <div className="w-2 h-2 rounded-sm bg-green-500 dark:bg-green-500" />
-                                                    <div className="w-2 h-2 rounded-sm bg-green-600 dark:bg-green-400" />
-                                                </div>
-                                                <span>More</span>
-                                            </div> */}
                                             </div>
 
                                             <div className="mt-4">

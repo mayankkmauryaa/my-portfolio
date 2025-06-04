@@ -3,16 +3,16 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const EducationSection = () => {
     const educationData = [
         {
+            degree: "Senior Secondary (PCM + CS)",
+            institution: "St. Mary's Convent School, Gajraula",
+            period: "12th Grade (2023): 70% | 10th Grade (2021): 86%",
+            url: "https://www.stmarysgajraula.org/"
+        },
+        {
             degree: "B.Tech in C.S & Engineering",
             institution: "GLA University, Mathura",
             period: "Expected July 2027",
             url: "https://www.gla.ac.in/"
-        },
-        {
-            degree: "Senior Secondary (PCM + CS)",
-            institution: "St. Mary's Convent School, Gajraula",
-            period: "12th Grade: 70% | 10th Grade: 86%",
-            url: "https://www.stmarysgajraula.org/"
         }
     ];
 

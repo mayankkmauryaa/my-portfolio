@@ -36,17 +36,23 @@ const Header = () => {
                         <span className="gradient-text">Mayank Maurya</span>
                     </a>
                     <nav className="hidden md:flex items-center space-x-8">
-                        <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-                        <a href="#skills" className="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
-                        <a href="#projects" className="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
-                        <a href="#education" className="text-gray-600 hover:text-blue-600 transition-colors">Education</a>
-                        <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
-                    </nav>
-                    <div className="hidden md:block">
-                        <Button asChild>
+                        {[
+                            { href: '#about', label: 'About' },
+                            { href: '#skills', label: 'Skills' },
+                            { href: '#projects', label: 'Projects' },
+                            { href: '#education', label: 'Education' }
+                        ].map((item) => (
+                            <a
+                                href={item.href}
+                                className="text-gray-600 hover:text-blue-600 transition-colors"
+                            >
+                                {item.label}
+                            </a>
+                        ))}
+                        <Button className="w-full" asChild onClick={() => setMobileMenuOpen(false)}>
                             <a href="#contact">Get In Touch</a>
                         </Button>
-                    </div>
+                    </nav>
                     <button
                         className="md:hidden text-gray-700"
                         onClick={toggleMobileMenu}
@@ -56,52 +62,6 @@ const Header = () => {
                         </svg>
                     </button>
                 </div>
-
-                {/* Mobile Menu */}
-                {/* {mobileMenuOpen && (
-                    <div className="md:hidden mt-4 bg-black rounded-lg shadow-lg p-4 absolute left-4 right-4">
-                        <nav className="flex flex-col space-y-3">
-                            <a
-                                href="#about"
-                                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                About
-                            </a>
-                            <a
-                                href="#skills"
-                                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                Skills
-                            </a>
-                            <a
-                                href="#projects"
-                                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                Projects
-                            </a>
-                            <a
-                                href="#education"
-                                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                Education
-                            </a>
-                            <a
-                                href="#contact"
-                                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                Contact
-                            </a>
-                            <Button className="w-full" asChild onClick={() => setMobileMenuOpen(false)}>
-                                <a href="#contact">Get In Touch</a>
-                            </Button>
-                        </nav>
-                    </div>
-                )} */}
                 {/* Mobile Menu */}
                 {mobileMenuOpen && (
                     <div className="md:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
@@ -119,8 +79,7 @@ const Header = () => {
                                     { href: '#about', label: 'About' },
                                     { href: '#skills', label: 'Skills' },
                                     { href: '#projects', label: 'Projects' },
-                                    { href: '#education', label: 'Education' },
-                                    { href: '#contact', label: 'Contact' }
+                                    { href: '#education', label: 'Education' }
                                 ].map((item) => (
                                     <a
                                         key={item.href}
