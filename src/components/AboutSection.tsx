@@ -51,6 +51,7 @@ const AboutSection = () => {
                         </div>
                     </div> */}
                 <div className="max-w-3xl mx-auto">
+                    {/* 3x3     8x1*/}
                     <Card className="reveal mb-8 dark:bg-gray-800/70 dark:border-gray-700">
                         <CardContent className="p-6 md:p-8">
                             <p className="text-lg leading-relaxed mb-4 dark:text-gray-200">
@@ -250,7 +251,7 @@ const AboutSection = () => {
                                                             blockMargin={4}
                                                             colorScheme="light"
                                                             fontSize={14}
-                                                            // onLoad={setCalendarLoaded(true)}
+                                                        // onLoad={setCalendarLoaded(true)}
                                                         />
                                                     </div>
                                                 </div>

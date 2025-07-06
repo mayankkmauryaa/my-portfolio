@@ -13,12 +13,14 @@ const NotFound = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
+            
             <div className="text-center">
                 <h1 className="text-4xl font-bold mb-4">💀 Error 404 💀</h1>
                 <p className="text-xl text-gray-600 mb-4"> Page not found</p>
                 <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-                    Return to Mayank
+                    Return to Home
                 </a>
+                {/* <p className="text-red-500">kisi ne bola th yeha aane ko</p> */}
             </div>
         </div>
     );

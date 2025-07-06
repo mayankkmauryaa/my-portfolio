@@ -44,7 +44,7 @@ const Header = () => {
                         ].map((item) => (
                             <a
                                 href={item.href}
-                                className="text-gray-600 hover:text-blue-600 transition-colors"
+                                className="text-gray-400 hover:text-blue-600 transition-colors"
                             >
                                 {item.label}
                             </a>

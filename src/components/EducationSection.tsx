@@ -21,39 +21,68 @@ const EducationSection = () => {
             title: "Goldman Sachs – Software Engineering Job Simulation",
             date: "Feb 2025",
             issuer: "Goldman Sachs",
-            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/MBA4MnZTNFEoJZGnk/NPdeQ43o8P9HJmJzg_MBA4MnZTNFEoJZGnk_3p85ZZGCqAbKh2cMP_1739215728377_completion_certificate.pdf"
+            credentialId: "kFwcgzqGYpT6m9QeK",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/MBA4MnZTNFEoJZGnk/NPdeQ43o8P9HJmJzg_MBA4MnZTNFEoJZGnk_3p85ZZGCqAbKh2cMP_1739215728377_completion_certificate.pdf",
+            skills: ["Cryptography basics", "Password best-practice", "Password cracking"]
         },
         {
             title: "AWS APAC – Solutions Architecture Simulation",
             date: "Feb 2025",
             issuer: "AWS",
-            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_3p85ZZGCqAbKh2cMP_1740070224303_completion_certificate.pdf"
+            credentialId: "GWZMxhLZygLRmuqzQ",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_3p85ZZGCqAbKh2cMP_1740070224303_completion_certificate.pdf",
+            skills: ["Architectural Drawings", "Amazon Web Services (AWS)", "Technical Support"]
         },
         {
             title: "Deloitte Australia – Data Analytics Job Simulation",
             date: "Mar 2025",
             issuer: "Deloitte",
-            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_3p85ZZGCqAbKh2cMP_1743186596450_completion_certificate.pdf"
+            credentialId: "xq9dmwyadwywp7fJd",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_3p85ZZGCqAbKh2cMP_1743186596450_completion_certificate.pdf",
+            skills: ["Data Analysis", "Data Modeling", "Spreadsheets", "Tableau"]
         },
         {
             title: "Tata Group – ESG Job Simulation",
             date: "Apr 2025",
             issuer: "Tata Group",
-            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/N8Muuhk6XsXgMTeu2_ifobHAoMjQs9s6bKS_3p85ZZGCqAbKh2cMP_1743878722241_completion_certificate.pdf"
+            credentialId: "LEKgjxrengsarQw4g",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/N8Muuhk6XsXgMTeu2_ifobHAoMjQs9s6bKS_3p85ZZGCqAbKh2cMP_1743878722241_completion_certificate.pdf",
+            skills: ["Research Skills", "Critical Thinking", "Business Development", "Sustainability", "Written Communication"]
         },
         {
-            title: "JPMorgan Chase - Investment Banking Job Simulation",
+            title: "JPMorgan Chase – Investment Banking Job Simulation",
             date: "Apr 2025",
             issuer: "JPMorgan Chase",
-            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ZtgA28qyexifyEdHE/YD2kY95RQxQtXxFTS_ZtgA28qyexifyEdHE_3p85ZZGCqAbKh2cMP_1744039941924_completion_certificate.pdf"
+            credentialId: "dJ7K6i4YsxLZZ7WtQ",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ZtgA28qyexifyEdHE/YD2kY95RQxQtXxFTS_ZtgA28qyexifyEdHE_3p85ZZGCqAbKh2cMP_1744039941924_completion_certificate.pdf",
+            skills: ["Client Communication", "Company Analysis", "M&A Screening", "Modelling", "Strategic Rationale"]
         },
         {
-            title: "JPMorgan Chase & Co. - Quantitative Research Job Simulation",
+            title: "JPMorgan Chase & Co. – Quantitative Research Job Simulation",
             date: "May 2025",
             issuer: "JPMorgan Chase & Co.",
-            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/bWqaecPDbYAwSDqJy_Sj7temL583QAYpHXD_3p85ZZGCqAbKh2cMP_1748516765112_completion_certificate.pdf"
+            credentialId: "N4Z8Se2kzsKgxpfbz",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/bWqaecPDbYAwSDqJy_Sj7temL583QAYpHXD_3p85ZZGCqAbKh2cMP_1748516765112_completion_certificate.pdf",
+            skills: ["Credit", "Data Analysis", "Derivatives", "Dynamic Programming", "Python", "Statistics"]
+        },
+        {
+            title: "Deloitte Australia – Cyber Job Simulation",
+            date: "Jul 2025",
+            issuer: "Deloitte",
+            credentialId: "XAdmreingysGgZpWf",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_3p85ZZGCqAbKh2cMP_1751795503655_completion_certificate.pdf",
+            skills: ["Computer Networking", "Log Interpretation", "Log Inspection", "Web Application Security", "Web Security"]
+        },
+        {
+            title: "Deloitte Australia – Technology Job Simulation",
+            date: "Jul 2025",
+            issuer: "Deloitte",
+            credentialId: "qKpbvakdsYDb4WNQt",
+            url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_3p85ZZGCqAbKh2cMP_1751793829961_completion_certificate.pdf",
+            skills: ["Data Structures", "Programming", "Python", "Software Development"]
         }
     ];
+
 
     return (
         <section id="education" className="section-padding bg-blue-50">
@@ -97,18 +126,21 @@ const EducationSection = () => {
                                 className="block"
                             >
                                 <Card className="reveal h-auto flex flex-col justify-between" style={{ transitionDelay: `${(index + 2) * 100}ms` }}>
-                                    <CardContent className="p-6">
+                                    <CardContent className="p-7">
                                         <h4 className="font-bold mb-1">{certification.title}</h4>
                                         <p className="text-sm text-gray-600">
                                             {certification.issuer} • {certification.date}
                                         </p>
+                                        <p className="text-sm text-green-500 mt-2">Credential ID: {certification.credentialId}</p>
+                                        <p className="text-sm text-blue-300 mt-2">Skills: {certification.skills.join(', ')}</p>
+                                        <p className="text-sm text-blue-600 mt-2">View Certificate</p>
                                     </CardContent>
                                 </Card>
                             </a>
                         ))}
                     </div>
                 </div>
-                
+
             </div>
         </section>
     );
