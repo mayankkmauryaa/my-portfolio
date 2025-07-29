@@ -32,15 +32,17 @@ const Header = () => {
             }`}>
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center">
-                    <a href="#hero" className="text-xl font-bold">
+                    <a href="https://mayankmaurya.netlify.app/" className="text-xl font-bold">
                         <span className="gradient-text">Mayank Maurya</span>
                     </a>
                     <nav className="hidden md:flex items-center space-x-8">
                         {[
                             { href: '#about', label: 'About' },
+                            { href: '#experience', label: 'Experience' },
                             { href: '#skills', label: 'Skills' },
                             { href: '#projects', label: 'Projects' },
                             { href: '#education', label: 'Education' }
+
                         ].map((item) => (
                             <a
                                 href={item.href}
@@ -77,6 +79,7 @@ const Header = () => {
                             <nav className="flex flex-col space-y-4 text-center">
                                 {[
                                     { href: '#about', label: 'About' },
+                                    { href: '#experience', label: 'Experience' },
                                     { href: '#skills', label: 'Skills' },
                                     { href: '#projects', label: 'Projects' },
                                     { href: '#education', label: 'Education' }

@@ -30,6 +30,7 @@ const AboutSection = () => {
 
             <div className="container mx-auto px-4">
                 <h2 className="section-title dark:text-white">About Me</h2>
+
                 {/* <div className="photo-container left">
                         {[1, 2, 3].map((i) => (
                             <img
@@ -65,7 +66,18 @@ const AboutSection = () => {
                             </p>
                         </CardContent>
                     </Card>
-
+                    <Card className="reveal mb-8 dark:bg-gray-800/70 dark:border-gray-700">
+                        {/* Tech Stack Icons */}
+                        <div className="flex gap-4 m-8 items-center ">
+                            <h3 className="text-2xl font-bold dark:text-white">My Preffered Languages : </h3>
+                            <img src="icons\html.svg" alt="HTML" className="w-8 h-8" />
+                            <img src="icons\css.svg" alt="CSS" className="w-8 h-8" />
+                            <img src="icons\js.svg" alt="JavaScript" className="w-8 h-8" />
+                            <img src="/icons/react.svg" alt="React" className="w-8 h-8" />
+                            <img src="icons\node.svg" alt="Node.js" className="w-8 h-8" />
+                            <img src="/icons/java.svg" alt="Java" className="w-8 h-8" />
+                        </div>
+                    </Card>
                     <Card className="reveal dark:bg-gray-800/70 dark:border-gray-700" style={{ transitionDelay: "100ms" }}>
                         <CardContent className="p-6 md:p-8">
                             <h3 className="text-2xl font-bold mb-4 dark:text-white">DSA Journey</h3>
@@ -106,11 +118,11 @@ const AboutSection = () => {
                                             <h5 className="text-base font-semibold mb-2 dark:text-gray-300">Submission Heatmap</h5>
                                             <a href="https://leetcode.com/u/mayankkmauryaa/">
                                                 {/* Stats Card */}
-                                                {/* <img
+                                                <img
                                                 src="https://leetcard.jacoblin.cool/mayankkmauryaa?ext=contest"
                                                 alt="LeetCode Stats"
                                                 className="rounded-xl border dark:border-gray-800 shadow"
-                                            /> */}
+                                            />
                                                 <img
                                                     src="https://leetcard.jacoblin.cool/mayankkmauryaa?ext=heatmap&theme=unicorn"
                                                     alt="Submission Heatmap"
@@ -136,31 +148,38 @@ const AboutSection = () => {
                                                 </div>
 
                                                 <div className="mt-4">
-                                                    <div className="flex gap-3">
+                                                    <div className="flex gap-3 flex-wrap justify-center">
+                                                        <div className="flex flex-col items-center">
+                                                            <Avatar className="w-10 h-10 border-2 border-purple-400">
+                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/others/200.gif" />
+                                                                <AvatarFallback className="bg-green-500/20 text-green-700">LC</AvatarFallback>
+                                                            </Avatar>
+                                                            <span className="text-xs mt-1 dark:text-gray-400">200 Days Badge 2025</span>
+                                                        </div>
                                                         <div className="flex flex-col items-center">
                                                             <Avatar className="w-10 h-10 border-2 border-blue-400">
-                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/others/lg25100.png" />
+                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/others/25100.gif" />
                                                                 <AvatarFallback className="bg-green-500/20 text-green-700">LC</AvatarFallback>
                                                             </Avatar>
                                                             <span className="text-xs mt-1 dark:text-gray-400">100 Days Badge 2025</span>
                                                         </div>
                                                         <div className="flex flex-col items-center">
                                                             <Avatar className="w-10 h-10 border-2 border-lime-300">
-                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/others/lg2550.png" />
+                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/others/2550.gif" />
                                                                 <AvatarFallback className="bg-purple-500/20 text-purple-700">LC</AvatarFallback>
                                                             </Avatar>
                                                             <span className="text-xs mt-1 dark:text-gray-400">50 Days Badge 2025</span>
                                                         </div>
                                                         <div className="flex flex-col items-center">
                                                             <Avatar className="w-10 h-10 border-2 border-blue-300">
-                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/marketing/2024-100-lg.png" />
+                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/marketing/2024-100-new.gif" />
                                                                 <AvatarFallback className="bg-yellow-500/20 text-yellow-700">LC</AvatarFallback>
                                                             </Avatar>
                                                             <span className="text-xs mt-1 dark:text-gray-400">100 Days Badge 2024</span>
                                                         </div>
                                                         <div className="flex flex-col items-center">
                                                             <Avatar className="w-10 h-10 border-2 border-green-500">
-                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png" />
+                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif" />
                                                                 <AvatarFallback className="bg-blue-500/20 text-blue-700">LC</AvatarFallback>
                                                             </Avatar>
                                                             <span className="text-xs mt-1 dark:text-gray-400">50 Days Badge 2024</span>
@@ -174,6 +193,39 @@ const AboutSection = () => {
                                 </div>
 
 
+                                {/* Codolio */}
+                                {/* <div className="mt-8">
+                                    <h4 className="text-xl font-semibold mb-4 dark:text-white flex items-center gap-2">
+                                        <a href="https://codolio.com/profile/mayankkmauryaa" aria-label="Visit my Codolio profile" title="Codolio Profile">
+                                            <img src="https://codolio.com/favicon.ico" alt="Codolio" className="w-6 h-6" />
+                                            Codolio Profile
+                                        </a>
+                                    </h4>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div className="dark:bg-gray-900/50 bg-gray-100 p-5 rounded-lg border dark:border-gray-700">
+
+                                            <h5 className="text-base font-semibold mb-3 dark:text-gray-300">My Codolio Profile</h5>
+                                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                                                Check out my Codolio profile to see my coding journey, projects, and contributions.
+                                            </p>
+                                            <a href="https://codolio.com/profile/mayankkmauryaa
+                                                " className="text-blue-600 dark:text-blue-400 hover:underline">
+                                                View Profile
+                                            </a>
+                                        </div>
+                                        <div className="dark:bg-gray-900/50 bg-gray-100 p-5 rounded-lg border dark:border-gray-700">
+                                            <h5 className="text-base font-semibold mb-3 dark:text-gray-300      ">My Codolio Stats</h5>
+                                            <img
+                                                src="https://codolio.com/api/v1/users/mayankkmauryaa"
+                                                alt="Codolio Stats"
+                                                className="rounded-lg border dark:border-gray-800 shadow w-full"
+                                            />
+                                            <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
+                                                Explore my coding stats, including challenges solved and contributions made.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> */}
 
 
                                 <div>
@@ -208,7 +260,7 @@ const AboutSection = () => {
                                                 /> */}
 
                                                 <span className="text-sm font-medium text-green-600 dark:text-green-400">
-                                                    {repoCount !== null ? `${repoCount} +repositories` : 'Loading...'}
+                                                    {repoCount !== null ? `${repoCount}+ repositories` : 'Loading...'}
                                                 </span>
 
 
@@ -283,7 +335,7 @@ const AboutSection = () => {
                 </div>
             </div>
 
-        </section>
+        </section >
     );
 };
 
