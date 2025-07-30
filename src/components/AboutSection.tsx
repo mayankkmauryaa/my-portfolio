@@ -51,7 +51,7 @@ const AboutSection = () => {
                             ))}
                         </div>
                     </div> */}
-                <div className="max-w-3xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     {/* 3x3     8x1*/}
                     <Card className="reveal mb-8 dark:bg-gray-800/70 dark:border-gray-700">
                         <CardContent className="p-6 md:p-8">
@@ -118,11 +118,11 @@ const AboutSection = () => {
                                             <h5 className="text-base font-semibold mb-2 dark:text-gray-300">Submission Heatmap</h5>
                                             <a href="https://leetcode.com/u/mayankkmauryaa/">
                                                 {/* Stats Card */}
-                                                <img
+                                                {/* <img
                                                 src="https://leetcard.jacoblin.cool/mayankkmauryaa?ext=contest"
                                                 alt="LeetCode Stats"
                                                 className="rounded-xl border dark:border-gray-800 shadow"
-                                            />
+                                            /> */}
                                                 <img
                                                     src="https://leetcard.jacoblin.cool/mayankkmauryaa?ext=heatmap&theme=unicorn"
                                                     alt="Submission Heatmap"
