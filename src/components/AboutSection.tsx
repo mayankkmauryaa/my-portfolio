@@ -91,7 +91,7 @@ const AboutSection = () => {
                                     "Graph Algorithms", "Searching", "Sorting", "Dynamic Programming"
                                 ].map((skill) => (
                                     <Badge key={skill} className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-white
-                                    dark:text-blue-100 hover:bg-blue-400 py-1.5 justify-center">
+                                    dark:text-blue-100 hover:bg-blue-400 py-2 justify-center">
                                         {skill}
                                     </Badge>
                                 ))}
@@ -272,7 +272,7 @@ const AboutSection = () => {
                                             <div className="flex flex-wrap gap-1 mb-4">
 
                                                 {/* Stats + Languages Side by Side */}
-                                                <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+                                                <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-6 ml-24">
                                                     <img
                                                         src="https://github-readme-stats.vercel.app/api/top-langs/?username=mayankkmauryaa&layout=compact&theme=transparent"
                                                         alt="Top Languages"
@@ -288,7 +288,7 @@ const AboutSection = () => {
 
                                                 {/* <GitHubCalendar username="mayankkmauryaa" /> */}
                                                 {/* GitHub Contribution Calendar */}
-                                                <div className="overflow-x-auto p-2 border dark:border-gray-700 rounded-lg bg-gray-100 dark:bg-gray-900/50 text-gray-800 dark:text-gray-200">
+                                                <div className="overflow-x-auto p-2 border ml-24 dark:border-gray-700 rounded-lg bg-gray-100 dark:bg-gray-900/50 text-gray-800 dark:text-gray-200">
 
                                                     {!calendarLoaded && (
                                                         <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">
@@ -314,7 +314,7 @@ const AboutSection = () => {
                                             </div>
 
                                             <div className="mt-4">
-                                                <div className="flex flex-wrap gap-2">
+                                                <div className="flex flex-wrap gap-2 ml-24">
                                                     <Badge variant="outline" className="bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400 dark:border-purple-800">
                                                         Regular Commits
                                                     </Badge>
