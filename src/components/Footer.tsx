@@ -1,4 +1,4 @@
-import { Linkedin, Github, Instagram, MessageSquareText, Phone } from 'lucide-react';
+import { Linkedin, Github, Instagram, MessageSquareText, Phone, Code2 } from 'lucide-react';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -23,7 +23,7 @@ const Footer = () => {
         {
             href: "https://leetcode.com/u/mayankkmauryaa/",
             label: "LeetCode",
-            icon: MessageSquareText,
+            icon: Code2,
         },
         {
             href: "https://www.instagram.com/mayankkmauryaa/",

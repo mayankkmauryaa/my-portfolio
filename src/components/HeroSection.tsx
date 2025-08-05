@@ -23,11 +23,11 @@ const HeroSection = () => {
                         {/* Typing Role Animation */}
                         <TypeAnimation
                             sequence={[
-                                'FullStack Developer', 2000,
-                                'Software Developer', 2000,
-                                'Tech Consultant', 2000,
-                                'Problem Solver', 2000,
-                                'Open Source Contributor', 2000,
+                                '| Full Stack Developer ', 2000,
+                                '| Software Developer ', 2000,
+                                '| Tech Consultant ', 2000,
+                                '| Problem Solver ', 2000,
+                                '| Open Source Contributor ', 2000,
                             ]}
                             wrapper="span"
                             speed={50}

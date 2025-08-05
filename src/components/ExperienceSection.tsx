@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const ExperienceSection = () => {
     return (
-        <section id="experience" className="py-20 bg-gradient-to-b from-gray-800 to-gray-900 text-white">
+        <section id="experience" className="py-20 bg-white text-white dark:bg-gray-900">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold mb-8 text-center">
                     <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">My Experience</span>
@@ -20,14 +20,14 @@ const ExperienceSection = () => {
                                     <div className="flex items-center gap-3 mb-1">
                                         <img src="https://futureinterns.com/wp-content/uploads/2025/05/cropped-cropped-Future-Interns-Site-Logo.png" alt="Future Interns" className="h-8 w-auto" />
 
-                                        <h3 className="text-2xl font-semibold text-white">Full Stack Intern</h3>
+                                        <h3 className="text-2xl font-semibold text-black dark:text-white">Full Stack Intern</h3>
                                     </div>
-                                    <p className="text-lg text-purple-400">Future Interns · Remote</p>
+                                    <p className="text-lg text-purple-400 ">Future Interns · Remote</p>
                                 </div>
                                 <span className="text-sm bg-green-600 px-3 py-1 rounded-full mt-2 md:mt-0 text-white">Completed · June 2025</span>
                             </div>
 
-                            <p className="text-gray-300 mb-6">
+                            <p className="text-gray-400 dark:text-gray-300 mb-6">
                                 Completed a 1-month intensive internship focused on real-world development projects in full-stack web development. Delivered three major tasks from scratch, incorporating frontend, backend, and deployment skills.
                             </p>
 
@@ -217,18 +217,18 @@ const ExperienceSection = () => {
                                     <div className="flex items-center gap-3 mb-1">
                                         <img src="https://media.licdn.com/dms/image/v2/C4E0BAQFdNatYGiBelg/company-logo_200_200/company-logo_200_200/0/1636138754252/facebook_logo?e=1756944000&v=beta&t=6QKCDmOSidq2ZFLvp9h0yv45HLBBdh5yJoDfBlT0CCg" alt="Meta" className="h-8 w-auto" />
 
-                                        <h3 className="text-2xl font-semibold text-white">Meta Front-End Developer Specialization</h3>
+                                        <h3 className="text-2xl font-semibold text-black dark:text-white">Meta Front-End Developer Specialization</h3>
                                     </div>
                                     <p className="text-lg text-purple-400">Meta • Coursera · Remote</p>
                                 </div>
                                 <span className="text-sm bg-green-600 px-3 py-1 rounded-full mt-2 md:mt-0 text-white">Completed · July 2025</span>
                             </div>
 
-                            <p className="text-gray-300 mb-6">
+                            <p className="text-gray-400 dark:text-gray-300 mb-6">
                                 A complete 10-course specialization from Meta covering core front-end technologies including React, JavaScript, HTML/CSS, UX/UI, Git, and real-world project work. Includes a verified certificate and badge.
                             </p>
 
-                            <ul className="list-disc list-inside text-gray-300 ml-4 space-y-2 text-sm">
+                            <ul className="list-disc list-inside text-gray-400 ml-4 space-y-2 text-sm">
                                 {[
                                     {
                                         title: 'Meta Front-End Developer Specialization',
@@ -285,7 +285,7 @@ const ExperienceSection = () => {
                                         <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
                                             {title}
                                         </a>{' '}
-                                        — Credential ID: <span className="text-white">{credentialId}</span>
+                                        — Credential ID: <span className="text-green-500 dark:text-white">{credentialId}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -385,18 +385,18 @@ const ExperienceSection = () => {
                                         {/* <img src="https://devslane.com/devslane.svg" alt="DevsLane" className="h-8 w-auto" /> */}
                                         {/* devslane.svg to logo.svg */}
 
-                                        <h3 className="text-2xl font-semibold text-white">Full Stack Software Engineering Training</h3>
+                                        <h3 className="text-2xl font-semibold text-black dark:text-white">Full Stack Software Engineering Training</h3>
                                     </div>
                                     <p className="text-lg text-purple-400">Escecion Technologies Pvt. Ltd. (DevsLane) · Remote</p>
                                 </div>
                                 <span className="text-sm bg-yellow-500 px-3 py-1 rounded-full mt-2 md:mt-0 text-white">Ongoing · Since June 2025</span>
                             </div>
 
-                            <p className="text-gray-300 mb-6">
+                            <p className="text-gray-400 dark:text-gray-300 mb-6">
                                 Actively participating in an ongoing Full Stack Software Engineering Training conducted remotely by Escecion Technologies Pvt. Ltd. (DevsLane). The program focuses on hands-on project-based learning using the MERN stack and professional development practices.
                             </p>
 
-                            <ul className="list-disc list-inside text-gray-300 ml-4 space-y-1">
+                            <ul className="list-disc list-inside text-blue-300 dark:text-blue-200 ml-4 space-y-1">
                                 <li>Started in June 2025; currently ongoing with progressive modules and mentorship</li>
                                 <li>Working on real-world tasks involving MongoDB, Express.js, React.js, and Node.js</li>
                                 <li>Focusing on backend logic, REST APIs, authentication, and deployment</li>

@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, MapPin, Phone, ArrowUp, Linkedin, Github, Instagram, MessageSquareText, LocateIcon } from 'lucide-react';
+import { Mail, MapPin, Phone, ArrowUp, Linkedin, Github, Instagram, Code2, LocateIcon } from 'lucide-react';
 
 const ContactSection = () => {
     const { toast } = useToast();
@@ -50,7 +50,7 @@ const ContactSection = () => {
     const socials = [
         { href: "https://www.linkedin.com/in/mayankmaurya05", icon: Linkedin },
         { href: "https://github.com/mayankkmauryaa", icon: Github },
-        { href: "https://leetcode.com/u/mayankkmauryaa/", icon: MessageSquareText },
+        { href: "https://leetcode.com/u/mayankkmauryaa/", icon: Code2 },
         { href: "https://www.instagram.com/mayankkmauryaa/", icon: Instagram },
         { href: "https://wa.me/918439480764?text=Hi%20Mayank%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!", icon: Phone },
     ];

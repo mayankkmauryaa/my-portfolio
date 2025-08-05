@@ -45,11 +45,13 @@ const Header = () => {
 
                         ].map((item) => (
                             <a
+                                key={item.href}
                                 href={item.href}
-                                className="text-gray-400 hover:text-blue-600 transition-colors"
+                                className="relative text-gray-400 transition-colors after:absolute after:left-0 after:top-full after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
                             >
                                 {item.label}
                             </a>
+
                         ))}
                         <Button className="w-full" asChild onClick={() => setMobileMenuOpen(false)}>
                             <a href="#contact">Get In Touch</a>
