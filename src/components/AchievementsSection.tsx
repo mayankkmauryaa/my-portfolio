@@ -20,7 +20,7 @@ const AchievementsSection = () => {
         },
         {
             title: "Hackathons & Internships",
-            description: "Engaged in full-time virtual internships and hackathon sprints focused on real-world problem solving.",
+            description: "Engaged in virtual internships and hackathon sprints focused on real-world problem solving.",
             icon: <Rocket className="w-6 h-6 text-purple-600" />,
         },
         {

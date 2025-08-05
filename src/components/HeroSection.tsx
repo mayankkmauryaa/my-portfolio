@@ -3,14 +3,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ArrowDown, Github, Linkedin, Instagram, Phone, MessageSquareText } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
-// import Particles from 'react-tsparticles';
-// import { loadFull } from 'tsparticles';
-// import { useCallback } from 'react';
-
-// const particlesInit = useCallback(async (engine) => {
-//   await loadFull(engine);
-// }, []);
-
 
 const HeroSection = () => {
     return (
@@ -18,13 +10,6 @@ const HeroSection = () => {
             id="hero"
             className="min-h-screen flex items-center py-20 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden"
         >
-            {/* <Particles
-                className="absolute inset-0 -z-10"
-                options={{
-                }}
-            /> */}
-            {/* simple sparse dots */}
-
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-center">
                     {/* Left Text Content */}
@@ -38,6 +23,7 @@ const HeroSection = () => {
                         {/* Typing Role Animation */}
                         <TypeAnimation
                             sequence={[
+                                'FullStack Developer', 2000,
                                 'Software Developer', 2000,
                                 'Tech Consultant', 2000,
                                 'Problem Solver', 2000,
@@ -52,11 +38,6 @@ const HeroSection = () => {
                         <p className="text-lg md:text-xl text-gray-300 mb-8">
                             Computer Science undergraduate passionate about solving real-world problems using technology.
                         </p>
-
-                        {/* Buttons */}
-                        {/* <Button variant="ghost" className="text-gray-400 hover:text-white">
-                            <a href="#contact">Hire Me</a>
-                        </Button> */}
 
                         <div className="flex flex-wrap gap-4 mb-6">
                             <Button

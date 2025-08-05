@@ -294,87 +294,52 @@ const EducationSection = () => {
                         ))}
                     </div>
                 </div>
-            </div><div className="max-w-4xl mx-auto mb-16">
-                {/* ──────────────── Certifications Section ──────────────── */}
-                {/* <div className="max-w-6xl mx-auto">
-                    <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-blue-800">
-                        <Award className="h-6 w-6" /> Certifications
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {certifications.map((cert, index) => (
-                            <a
-                                key={index}
-                                href={cert.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="block"
-                            >
-                                <Card className="hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
-                                    <CardContent className="p-6">
-                                        <h4 className="font-semibold text-lg text-gray-800">{cert.title}</h4>
-                                        <p className="text-sm text-gray-600">
-                                            {cert.issuer} • {cert.date}
-                                        </p>
-                                        <p className="text-xs text-green-600 mt-1">
-                                            Credential ID: {cert.credentialId}
-                                        </p>
-                                        <p className="text-sm text-blue-700 mt-2">
-                                            {cert.skills.join(', ')}
-                                        </p>
-                                        <p className="text-sm text-blue-500 mt-2 underline">
-                                            View Certificate
-                                        </p>
-                                    </CardContent>
-                                </Card>
-                            </a>
+                <div className="max-w-4xl mx-auto mb-16">
+                    {/* ──────────────── Certifications Section ──────────────── */}
+                    <div className="max-w-6xl mx-auto">
+                        <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-blue-800">
+                            <Award className="h-6 w-6" /> Certifications
+                        </h3>
+
+                        {Object.entries(certificationsByIssuer).map(([issuer, certs]) => (
+                            <div key={issuer} className="mb-10">
+                                <h4 className="text-xl font-bold text-gray-700 border-b border-gray-200 pb-2 mb-4">
+                                    {issuer}
+                                </h4>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    {certs.map((cert, index) => (
+                                        <a
+                                            key={index}
+                                            href={cert.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="block"
+                                        >
+                                            <Card className="hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
+                                                <CardContent className="p-6">
+                                                    <h4 className="font-semibold text-lg text-gray-800">{cert.title}</h4>
+                                                    <p className="text-sm text-gray-600">
+                                                        {cert.issuer} • {cert.date}
+                                                    </p>
+                                                    <p className="text-xs text-green-600 mt-1">
+                                                        Credential ID: {cert.credentialId || '—'}
+                                                    </p>
+                                                    <p className="text-sm text-blue-700 mt-2">
+                                                        {cert.skills?.join(', ') || '—'}
+                                                    </p>
+                                                    <p className="text-sm text-blue-500 mt-2 underline">
+                                                        View Certificate
+                                                    </p>
+                                                </CardContent>
+                                            </Card>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
                         ))}
                     </div>
-                </div> */}
 
-                {/* ──────────────── Certifications Section ──────────────── */}
-                <div className="max-w-6xl mx-auto">
-                    <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-blue-800">
-                        <Award className="h-6 w-6" /> Certifications
-                    </h3>
-
-                    {Object.entries(certificationsByIssuer).map(([issuer, certs]) => (
-                        <div key={issuer} className="mb-10">
-                            <h4 className="text-xl font-bold text-gray-700 border-b border-gray-200 pb-2 mb-4">
-                                {issuer}
-                            </h4>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {certs.map((cert, index) => (
-                                    <a
-                                        key={index}
-                                        href={cert.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="block"
-                                    >
-                                        <Card className="hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
-                                            <CardContent className="p-6">
-                                                <h4 className="font-semibold text-lg text-gray-800">{cert.title}</h4>
-                                                <p className="text-sm text-gray-600">
-                                                    {cert.issuer} • {cert.date}
-                                                </p>
-                                                <p className="text-xs text-green-600 mt-1">
-                                                    Credential ID: {cert.credentialId || '—'}
-                                                </p>
-                                                <p className="text-sm text-blue-700 mt-2">
-                                                    {cert.skills?.join(', ') || '—'}
-                                                </p>
-                                                <p className="text-sm text-blue-500 mt-2 underline">
-                                                    View Certificate
-                                                </p>
-                                            </CardContent>
-                                        </Card>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
                 </div>
-
             </div>
         </section>
     );

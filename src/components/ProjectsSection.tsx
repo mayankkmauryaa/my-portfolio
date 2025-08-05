@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import {
     Card,
     CardContent,
@@ -12,145 +15,150 @@ const ProjectsSection = () => {
     const projectGroups = [
         {
             title: 'Future Interns Internship Tasks',
+            key: 'internship',
             projects: [
                 {
                     title: 'Personal Portfolio Website',
                     description:
-                        'Interactive portfolio with resume, projects and contact form. React.js frontend, Node.js backend, SEO‑friendly and deployed on Vercel.',
-                    tags: ['React.js', 'Node.js', 'MySQL/MongoDB', 'SEO'],
+                        'Built a responsive and animated personal portfolio using React.js, TypeScript, Tailwind CSS, and Framer Motion. Hosted on Vercel.',
+                    tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
                 },
                 {
                     title: 'Weather Dashboard',
                     description:
-                        'React dashboard that consumes OpenWeather API to display real‑time temperature, humidity and multi‑day forecast with “save favourite city” support.',
-                    tags: ['React.js', 'OpenWeather API', 'Node.js', 'UX'],
+                        'A real-time weather app built with React and OpenWeatherMap API. Features location-based search and current forecast display.',
+                    tags: ['React.js', 'Node.js', 'API Integration'],
                 },
                 {
-                    title: 'Amazon.com AI Re‑brand',
+                    title: 'AI-Powered Brand Website Redesign',
                     description:
-                        'Full UI/UX redesign of Amazon using Next.js + Tailwind CSS. Content is served from Strapi CMS; AI tools (Durable, Adobe Firefly) generate brand assets.',
-                    tags: ['Next.js', 'Tailwind CSS', 'Strapi', 'AI'],
+                        'Redesigned a fictional brand website using Next.js and styled-components with AI-generated content, layout, and branding.',
+                    tags: ['Next.js', 'styled-components', 'SEO', 'AI Tools'],
                 },
             ],
         },
         {
             title: 'Full Stack & Real-time Applications',
+            key: 'fullstack',
             projects: [
                 {
-                    title: 'Real‑Time Chat App',
+                    title: 'Real-Time Chat App (WhatsApp Clone)',
                     description:
-                        'WhatsApp‑style chat built with React, Socket.IO and MongoDB. Supports private rooms, JWT auth, typing indicators and message history.',
-                    tags: ['React.js', 'Socket.IO', 'MongoDB', 'JWT'],
+                        'A full-stack real-time chat app using React, Node.js, Express, MongoDB, and Socket.IO. Includes auth, typing indicators, and message history.',
+                    tags: ['MERN Stack', 'Socket.IO', 'JWT Auth', 'MongoDB'],
                 },
                 {
-                    title: 'FlashCard Learning App',
+                    title: 'Amazon.com UI Redesign',
                     description:
-                        'Full‑stack flashcard platform with spaced‑repetition scheduling. React.js frontend, Express/Node backend, MongoDB storage.',
-                    tags: ['React.js', 'Node.js', 'MongoDB', 'EdTech'],
+                        'Revamped Amazon’s homepage using Next.js and styled-components, replicating the layout with SEO, accessibility, and mobile responsiveness.',
+                    tags: ['Next.js', 'styled-components', 'Responsive UI'],
                 },
             ],
         },
         {
             title: 'AI & Career Tools',
+            key: 'ai',
             projects: [
                 {
-                    title: 'Career Guidance Toolkit',
+                    title: 'Resume Generator',
                     description:
-                        'AI‑assisted web app recommending career paths based on user interests. Built with React.js, Tailwind CSS and FastAPI backend.',
-                    tags: ['React.js', 'Tailwind CSS', 'FastAPI', 'AI'],
+                        'An AI-based resume builder using React and GPT API to generate tailored resumes from user input.',
+                    tags: ['React', 'GPT', 'AI', 'Tailwind'],
                 },
                 {
-                    title: 'AI‑Powered Code Generator',
+                    title: 'JobMatch AI',
                     description:
-                        'Desktop tool (Electron) that calls the OpenAI API to generate, explain and refactor code snippets. FastAPI powers the API layer.',
-                    tags: ['Electron.js', 'FastAPI', 'OpenAI API', 'React.js'],
+                        'A tool that analyzes resumes and job descriptions to calculate matching percentage using NLP and cosine similarity.',
+                    tags: ['Python', 'NLP', 'Streamlit'],
                 },
             ],
         },
         {
             title: 'Python + MySQL Management Systems',
+            key: 'management',
             projects: [
                 {
                     title: 'Hospital Management System',
                     description:
-                        'Patient‑record and billing platform developed with Python and MySQL, featuring role‑based access and printable invoices.',
-                    tags: ['Python', 'MySQL', 'CRUD', 'Healthcare'],
+                        'CLI-based system with patient records, billing, and appointment modules using Python and MySQL.',
+                    tags: ['Python', 'MySQL', 'OOP'],
                 },
                 {
-                    title: 'School Management System',
+                    title: 'Inventory Management Tool',
                     description:
-                        'End‑to‑end student & staff administration suite in Python with a MySQL backend and Tkinter UI.',
-                    tags: ['Python', 'MySQL', 'Tkinter', 'ERP'],
-                },
-                {
-                    title: 'Library Management System',
-                    description:
-                        'Inventory + member tracking system written in Python with a MySQL database, including late‑fee automation.',
-                    tags: ['Python', 'MySQL', 'Inventory', 'Automation'],
+                        'A simple inventory management CLI for small businesses using Python and persistent MySQL backend.',
+                    tags: ['Python', 'MySQL', 'Database'],
                 },
             ],
         },
         {
             title: 'Hardware & Robotics',
+            key: 'robotics',
             projects: [
                 {
-                    title: 'Line Tracer Robot',
+                    title: 'Obstacle Avoiding Robot',
                     description:
-                        'Autonomous robot using IR sensors and Arduino to follow tracks with PID‑based speed control.',
-                    tags: ['Arduino', 'IR Sensors', 'Robotics'],
+                        'Built using Arduino and ultrasonic sensors, this robot navigates by avoiding obstacles in real time.',
+                    tags: ['Arduino', 'C++', 'Sensors'],
                 },
                 {
-                    title: 'RC Car',
+                    title: 'Line Following Robot',
                     description:
-                        'Remote‑controlled car integrating motor drivers, Bluetooth module and custom Arduino firmware.',
-                    tags: ['Arduino', 'Bluetooth', 'Motor Drivers'],
-                },
-                {
-                    title: '3D Printer (DIY)',
-                    description:
-                        'Assembled and calibrated a custom FDM 3D printer with open‑source Marlin firmware and self‑designed frame.',
-                    tags: ['3D Printing', 'Firmware', 'Hardware'],
-                },
-                {
-                    title: 'Quadcopter Drone',
-                    description:
-                        'Configured a quadcopter with brushless motors, ESCs and an open‑source flight controller; tuned PID for stable flight.',
-                    tags: ['Drone', 'ESCs', 'Flight Controller', 'PID'],
+                        'Follows a path using IR sensors. Tuned with PID control logic for accuracy and curve handling.',
+                    tags: ['Embedded C', 'Robotics', 'PID'],
                 },
             ],
         },
     ];
+
+    const [activeGroupKey, setActiveGroupKey] = useState('internship');
+    const activeGroup = projectGroups.find((group) => group.key === activeGroupKey);
 
     return (
         <section id="projects" className="section-padding bg-white">
             <div className="container mx-auto px-4">
                 <h2 className="section-title mb-8 text-3xl font-bold text-gray-800">Projects</h2>
 
-                {projectGroups.map((group, groupIndex) => (
-                    <div key={groupIndex} className="mb-12">
-                        <h3 className="text-2xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-2">
+                {/* Filters */}
+                <div className="flex flex-wrap gap-3 mb-6">
+                    {projectGroups.map((group) => (
+                        <button
+                            key={group.key}
+                            onClick={() => setActiveGroupKey(group.key)}
+                            className={`px-4 py-2 rounded-full text-sm font-semibold border transition ${activeGroupKey === group.key
+                                ? 'bg-blue-600 text-white border-blue-600'
+                                : 'bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200'
+                                }`}
+                        >
                             {group.title}
+                        </button>
+                    ))}
+                </div>
+
+                {/* Active Group */}
+                {activeGroup && (
+                    <div className="mb-12">
+                        <h3 className="text-2xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-2">
+                            {activeGroup.title}
                         </h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {group.projects.map((project, projectIndex) => (
+                            {activeGroup.projects.map((project, i) => (
                                 <Card
-                                    key={projectIndex}
-                                    className="reveal hover:shadow-lg transition-shadow"
-                                    style={{ transitionDelay: `${projectIndex * 50}ms` }}
+                                    key={i}
+                                    className="hover:shadow-md transition-shadow duration-300"
+                                    style={{ transitionDelay: `${i * 40}ms` }}
                                 >
-                                    <CardHeader className="pb-4">
+                                    <CardHeader>
                                         <CardTitle>{project.title}</CardTitle>
                                     </CardHeader>
                                     <CardContent>
-                                        <CardDescription className="text-base">
-                                            {project.description}
-                                        </CardDescription>
+                                        <CardDescription className="text-base">{project.description}</CardDescription>
                                     </CardContent>
                                     <CardFooter>
                                         <div className="flex flex-wrap gap-2">
-                                            {project.tags.map((tag, tagIndex) => (
+                                            {project.tags.map((tag, j) => (
                                                 <Badge
-                                                    key={tagIndex}
+                                                    key={j}
                                                     variant="secondary"
                                                     className="bg-blue-100 text-blue-800 hover:bg-blue-200"
                                                 >
@@ -163,7 +171,7 @@ const ProjectsSection = () => {
                             ))}
                         </div>
                     </div>
-                ))}
+                )}
             </div>
         </section>
     );

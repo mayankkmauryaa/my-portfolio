@@ -55,7 +55,7 @@ const AboutSection = () => {
                     {/* 3x3     8x1*/}
                     <Card className="reveal mb-8 dark:bg-gray-800/70 dark:border-gray-700">
                         <CardContent className="p-6 md:p-8">
-                            <p className="text-lg leading-relaxed mb-4 dark:text-gray-200">
+                            {/* <p className="text-lg leading-relaxed mb-4 dark:text-gray-200">
                                 I'm an aspiring tech consultant and highly motivated Computer Science undergraduate with a passion for solving real-world business problems using innovative technologies.
                             </p>
                             <p className="text-lg leading-relaxed mb-4 dark:text-gray-200">
@@ -63,13 +63,23 @@ const AboutSection = () => {
                             </p>
                             <p className="text-lg leading-relaxed dark:text-gray-200">
                                 I have completed my Data Structures and Algorithms journey up through Trees and Binary Search Trees, and I'm constantly expanding my knowledge in the field of computer science and software engineering.
+                            </p> */}
+                            <p className="text-lg leading-relaxed mb-4 dark:text-gray-200">
+                                I'm an aspiring tech consultant and driven Computer Science undergraduate, passionate about solving real-world business problems through technology and innovation.
                             </p>
+                            <p className="text-lg leading-relaxed mb-4 dark:text-gray-200">
+                                Skilled in full-stack development with hands-on experience in collaborative, agile-driven projects. I bring strong communication, critical thinking, and a proactive mindset to every team I work with.
+                            </p>
+                            <p className="text-lg leading-relaxed dark:text-gray-200">
+                                I’ve built a solid foundation in Data Structures and Algorithms up to Trees and BSTs, and I continuously push my learning in system design, cloud services, and modern software engineering practices.
+                            </p>
+
                         </CardContent>
                     </Card>
                     <Card className="reveal mb-8 dark:bg-gray-800/70 dark:border-gray-700">
                         {/* Tech Stack Icons */}
                         <div className="flex gap-4 m-8 items-center ">
-                            <h3 className="text-2xl font-bold dark:text-white">My Preffered Languages : </h3>
+                            <h3 className="text-2xl font-bold dark:text-white">My Preferred Languages : </h3>
                             <img src="icons\html.svg" alt="HTML" className="w-8 h-8" />
                             <img src="icons\css.svg" alt="CSS" className="w-8 h-8" />
                             <img src="icons\js.svg" alt="JavaScript" className="w-8 h-8" />
@@ -272,7 +282,7 @@ const AboutSection = () => {
                                             <div className="flex flex-wrap gap-1 mb-4">
 
                                                 {/* Stats + Languages Side by Side */}
-                                                <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-6 ml-24">
+                                                <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-6">
                                                     <img
                                                         src="https://github-readme-stats.vercel.app/api/top-langs/?username=mayankkmauryaa&layout=compact&theme=transparent"
                                                         alt="Top Languages"
@@ -288,7 +298,7 @@ const AboutSection = () => {
 
                                                 {/* <GitHubCalendar username="mayankkmauryaa" /> */}
                                                 {/* GitHub Contribution Calendar */}
-                                                <div className="overflow-x-auto p-2 border ml-24 dark:border-gray-700 rounded-lg bg-gray-100 dark:bg-gray-900/50 text-gray-800 dark:text-gray-200">
+                                                <div className="overflow-x-auto p-2 border dark:border-gray-700 rounded-lg bg-gray-100 dark:bg-gray-900/50 text-gray-800 dark:text-gray-200">
 
                                                     {!calendarLoaded && (
                                                         <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">
@@ -314,7 +324,7 @@ const AboutSection = () => {
                                             </div>
 
                                             <div className="mt-4">
-                                                <div className="flex flex-wrap gap-2 ml-24">
+                                                <div className="flex flex-wrap gap-2">
                                                     <Badge variant="outline" className="bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400 dark:border-purple-800">
                                                         Regular Commits
                                                     </Badge>
