@@ -59,7 +59,7 @@ const AboutSection = () => {
                             <img src="icons\node.svg" alt="Node.js" className="w-8 h-8" />
                             <img src="/icons/java.svg" alt="Java" className="w-8 h-8" />
                             <img src="/icons/python.svg" alt="Java" className="w-8 h-8" />
-                            <img src="/icons/mysql.svg" alt="Java" className="w-12 h-12" />
+                            <img src="/icons/mysql.svg" alt="Java" className="w-8 h-8" />
                             </div>
                         </div>
                     </Card>
