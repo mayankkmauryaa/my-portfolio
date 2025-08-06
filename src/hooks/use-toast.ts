@@ -189,3 +189,14 @@ function useToast() {
 }
 
 export { useToast, toast }
+
+
+// ⚠️ Notes
+// TOAST_REMOVE_DELAY = 1000000 means your toast stays for a very long time (≈16 mins). You likely want to reduce this to 3000 (3s) or 5000 (5s).
+
+// This implementation is memory-only (not persistent or using context/global state), but it's lightweight and decoupled.
+
+// You could easily plug this into a global <Toaster /> component that maps over toasts and renders them.
+
+// 🔥 Final Verdict
+// This is a highly reusable and modular toast manager. It’s ideal for modern component libraries like shadcn/ui or Radix, and fits well into both small and large apps.

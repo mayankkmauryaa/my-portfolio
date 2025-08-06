@@ -61,3 +61,35 @@ const Index = () => {
 };
 
 export default Index;
+
+
+
+// This is the main page component (Index) of your personal portfolio site built with React (likely Next.js, given the use of @/ aliases). Let me break down exactly what it's doing, and then give you honest feedback + improvement suggestions.
+
+// ✅ What this Code Does
+// 1. Component Composition
+// It imports and renders your full site layout in order:
+
+// Header – likely contains your navbar
+
+// ThemeToggle – dark/light mode switch
+
+// HeroSection – intro banner (e.g. "Hi, I'm Mayank...")
+
+// AboutSection
+
+// ExperienceSection
+
+// SkillsSection
+
+// ProjectsSection
+
+// EducationSection
+
+// AchievementsSection
+
+// ContactSection
+
+// Footer
+
+// This structure is ideal for a personal portfolio. ✅

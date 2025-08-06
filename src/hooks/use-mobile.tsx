@@ -17,3 +17,13 @@ export function useIsMobile() {
 
     return !!isMobile
 }
+
+
+// This hook:
+
+// Dynamically tracks whether the current device is mobile based on screen width (< 768px).
+
+// Updates automatically on window resize.
+
+// Useful for rendering responsive layouts or toggling mobile-specific components.
+
