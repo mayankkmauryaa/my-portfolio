@@ -31,15 +31,15 @@ const AchievementsSection = () => {
     ];
 
     return (
-        <section id="achievements" className="section-padding bg-white py-16">
+        <section id="achievements" className="dark:bg-gray-900 section-padding bg-white py-16">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Achievements</h2>
+                <h2 className="dark:text-white text-3xl font-bold text-center mb-12 text-gray-800">Achievements</h2>
 
                 <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {achievements.map((item, index) => (
                         <Card
                             key={index}
-                            className="hover:shadow-lg border border-gray-200 transition-all duration-300 transform hover:-translate-y-1"
+                            className="dark:bg-blue-100 hover:shadow-lg border border-gray-200 transition-all duration-300 transform hover:-translate-y-1"
                             style={{ transitionDelay: `${index * 80}ms` }}
                         >
                             <CardContent className="p-6">

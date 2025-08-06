@@ -121,7 +121,14 @@ const ContactSection = () => {
 
                         {/* RIGHT - CONTACT FORM */}
                         <div className="reveal" style={{ transitionDelay: "100ms" }}>
-                            <form onSubmit={handleSubmit} className="space-y-6">
+                            {/* <form onSubmit={handleSubmit} className="space-y-6">
+                             */}
+                            <form
+                                action="https://formsubmit.co/hpmayankmaurya@gmail.com"
+                                // action="https://formspree.io/f/mzzvjoaq"
+                                method="POST"
+                                className="space-y-6"
+                            >
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
                                     <Input

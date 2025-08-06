@@ -11,6 +11,48 @@ const ExperienceSection = () => {
                 </h2>
                 <div className="max-w-6xl mx-auto space-y-12">
 
+                    {/* ─────────────── DevsLane Ongoing Training ─────────────── */}
+                    <Card className="reveal dark:bg-gray-800/70 dark:border-gray-700">
+                        <CardContent className="p-6 md:p-8">
+                            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                                <div>
+                                    <div className="flex items-center gap-3 mb-1">
+                                        <img src="https://devslane.com/favicon.png" alt="DevsLane" className="h-8 w-auto" />
+                                        {/* <img src="https://devslane.com/devslane.svg" alt="DevsLane" className="h-8 w-auto" /> */}
+                                        {/* devslane.svg to logo.svg */}
+
+                                        <h3 className="text-2xl font-semibold text-black dark:text-white">Full Stack Software Engineering Training</h3>
+                                    </div>
+                                    <p className="text-lg text-purple-400">Escecion Technologies Pvt. Ltd. (DevsLane) · Remote</p>
+                                </div>
+                                <span className="text-sm bg-yellow-500 px-3 py-1 rounded-full mt-2 md:mt-0 text-white">Ongoing · Since June 2025</span>
+                            </div>
+
+                            <p className="text-gray-400 dark:text-gray-300 mb-6">
+                                Actively participating in an ongoing Full Stack Software Engineering Training conducted remotely by Escecion Technologies Pvt. Ltd. (DevsLane). The program focuses on hands-on project-based learning using the MERN stack and professional development practices.
+                            </p>
+
+                            <ul className="list-disc list-inside text-blue-300 dark:text-blue-200 ml-4 space-y-1">
+                                <li>Started in June 2025; currently ongoing with progressive modules and mentorship</li>
+                                <li>Working on real-world tasks involving MongoDB, Express.js, React.js, and Node.js</li>
+                                <li>Focusing on backend logic, REST APIs, authentication, and deployment</li>
+                                <li>Demonstrating strong commitment to learning and consistent skill growth</li>
+                            </ul>
+
+                            <div className="flex gap-4 mt-6">
+                                <a
+                                    href="https://drive.google.com/file/d/1Ub2H6weFPgPkMP3wBAhosc2wNFBJ6bxF/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center text-md bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-4 py-2 rounded-md"
+                                >
+                                    View Ongoing Certificate
+                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                </a>
+                            </div>
+
+                        </CardContent>
+                    </Card>
                     {/* ─────────────── Internship ─────────────── */}
 
                     <Card className="reveal dark:bg-gray-800/70 dark:border-gray-700">
@@ -375,48 +417,6 @@ const ExperienceSection = () => {
                     </Card>
 
 
-                    {/* ─────────────── DevsLane Ongoing Training ─────────────── */}
-                    <Card className="reveal dark:bg-gray-800/70 dark:border-gray-700">
-                        <CardContent className="p-6 md:p-8">
-                            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                                <div>
-                                    <div className="flex items-center gap-3 mb-1">
-                                        <img src="https://devslane.com/favicon.png" alt="DevsLane" className="h-8 w-auto" />
-                                        {/* <img src="https://devslane.com/devslane.svg" alt="DevsLane" className="h-8 w-auto" /> */}
-                                        {/* devslane.svg to logo.svg */}
-
-                                        <h3 className="text-2xl font-semibold text-black dark:text-white">Full Stack Software Engineering Training</h3>
-                                    </div>
-                                    <p className="text-lg text-purple-400">Escecion Technologies Pvt. Ltd. (DevsLane) · Remote</p>
-                                </div>
-                                <span className="text-sm bg-yellow-500 px-3 py-1 rounded-full mt-2 md:mt-0 text-white">Ongoing · Since June 2025</span>
-                            </div>
-
-                            <p className="text-gray-400 dark:text-gray-300 mb-6">
-                                Actively participating in an ongoing Full Stack Software Engineering Training conducted remotely by Escecion Technologies Pvt. Ltd. (DevsLane). The program focuses on hands-on project-based learning using the MERN stack and professional development practices.
-                            </p>
-
-                            <ul className="list-disc list-inside text-blue-300 dark:text-blue-200 ml-4 space-y-1">
-                                <li>Started in June 2025; currently ongoing with progressive modules and mentorship</li>
-                                <li>Working on real-world tasks involving MongoDB, Express.js, React.js, and Node.js</li>
-                                <li>Focusing on backend logic, REST APIs, authentication, and deployment</li>
-                                <li>Demonstrating strong commitment to learning and consistent skill growth</li>
-                            </ul>
-
-                            <div className="flex gap-4 mt-6">
-                                <a
-                                    href="https://drive.google.com/file/d/1Ub2H6weFPgPkMP3wBAhosc2wNFBJ6bxF/view?usp=sharing"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center text-md bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-4 py-2 rounded-md"
-                                >
-                                    View Ongoing Certificate
-                                    <ArrowRight className="ml-2 h-4 w-4" />
-                                </a>
-                            </div>
-
-                        </CardContent>
-                    </Card>
 
                 </div>
             </div>

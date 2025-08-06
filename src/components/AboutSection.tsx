@@ -50,16 +50,16 @@ const AboutSection = () => {
                     <Card className="reveal mb-8 dark:bg-gray-800/70 dark:border-gray-700">
                         {/* Tech Stack Icons */}
                         <div className="flex gap-4 m-8 items-center flex-wrap">
-                            <h3 className="text-2xl font-bold dark:text-white">My Preferred Languages : </h3>
+                            <h3 className="text-2xl font-bold dark:text-white"><span className="inline-block"></span>Languages & Technologies:</h3>
                             <div className="flex gap-4">
-                            <img src="icons\html.svg" alt="HTML" className="w-8 h-8" />
-                            <img src="icons\css.svg" alt="CSS" className="w-8 h-8" />
-                            <img src="icons\js.svg" alt="JavaScript" className="w-8 h-8" />
-                            <img src="/icons/react.svg" alt="React" className="w-8 h-8" />
-                            <img src="icons\node.svg" alt="Node.js" className="w-8 h-8" />
-                            <img src="/icons/java.svg" alt="Java" className="w-8 h-8" />
-                            <img src="/icons/python.svg" alt="Java" className="w-8 h-8" />
-                            <img src="/icons/mysql.svg" alt="Java" className="w-8 h-8" />
+                                <img src="icons\html.svg" alt="HTML" className="w-8 h-8" />
+                                <img src="icons\css.svg" alt="CSS" className="w-8 h-8" />
+                                <img src="icons\js.svg" alt="JavaScript" className="w-8 h-8" />
+                                <img src="/icons/react.svg" alt="React" className="w-8 h-8" />
+                                <img src="icons\node.svg" alt="Node.js" className="w-8 h-8" />
+                                <img src="/icons/java.svg" alt="Java" className="w-8 h-8" />
+                                <img src="/icons/python.svg" alt="Java" className="w-8 h-8" />
+                                <img src="/icons/mysql.svg" alt="Java" className="w-8 h-8" />
                             </div>
                         </div>
                     </Card>
@@ -85,10 +85,10 @@ const AboutSection = () => {
                             <div className="mt-8 space-y-8">
                                 <div>
                                     <h4 className="text-xl font-semibold mb-4 dark:text-white flex items-center gap-2">
-                                        <a href="https://leetcode.com/u/mayankkmauryaa/" aria-label="Visit my LeetCode profile" title="LeetCode Profile">
+                                        <a href="https://leetcode.com/u/mayankkmauryaa/" aria-label="Visit my LeetCode profile" title="LeetCode Profile" target="_blank">
                                             <Code2 className="hover:text-yellow-400 transition-colors w-6 h-6" />
                                         </a>
-                                        <a href="https://leetcode.com/u/mayankkmauryaa/" aria-label="Visit my LeetCode profile" title="LeetCode Profile">
+                                        <a href="https://leetcode.com/u/mayankkmauryaa/" aria-label="Visit my LeetCode profile" title="LeetCode Profile" target="_blank">
                                             LeetCode Progress</a>
                                     </h4>
 
@@ -96,7 +96,7 @@ const AboutSection = () => {
                                         {/* Submission Heatmap */}
                                         <div className="dark:bg-gray-800/0 pt-5 rounded-lg ">
                                             <h5 className="text-base font-semibold mb-2 dark:text-gray-300">Submission Heatmap</h5>
-                                            <a href="https://leetcode.com/u/mayankkmauryaa/">
+                                            <a href="https://leetcode.com/u/mayankkmauryaa/" target="_blank">
                                                 {/* Stats Card */}
                                                 {/* <img
                                                 src="https://leetcard.jacoblin.cool/mayankkmauryaa?ext=contest"
@@ -112,7 +112,7 @@ const AboutSection = () => {
                                         </div>
 
                                         <div className="dark:bg-gray-800/0 p-5 rounded-lg">
-                                            <a href="https://leetcode.com/u/mayankkmauryaa/">
+                                            <a href="https://leetcode.com/u/mayankkmauryaa/" target='_blank'>
 
                                                 <h5 className="text-base font-semibold mb-3 dark:text-gray-300">Badges & Achievements</h5>
                                                 <div className="flex flex-wrap gap-2">
@@ -192,7 +192,7 @@ const AboutSection = () => {
 
                                     <a href="https://github.com/mayankkmauryaa" target='_blank'>
 
-                                        <div className="dark:bg-gray-900/50 bg-gray-100 p-5 rounded-lg border dark:border-gray-700">
+                                        <div className="dark:bg-gray-900/50 p-5 rounded-lg dark:border-gray-700">
                                             <div className="flex justify-between items-center mb-4">
                                                 <span className="font-semibold dark:text-gray-300">Contribution Activity</span>
                                                 <span className="text-sm font-medium text-green-600 dark:text-green-400">

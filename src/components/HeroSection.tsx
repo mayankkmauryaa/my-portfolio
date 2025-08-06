@@ -8,7 +8,7 @@ const HeroSection = () => {
     return (
         <section
             id="hero"
-            className="min-h-screen flex items-center py-20 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden"
+            className="min-h-screen flex items-center py-20 bg-gradient-to-b from-blue-800 to-red-700 relative overflow-hidden"
         >
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-center">
@@ -52,7 +52,7 @@ const HeroSection = () => {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="text-lg border-gray-600 text-gray-200 hover:bg-gray-700 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-600 hover:to-purple-600"
+                                className="text-lg border-gray-600 text-gray-200 hover:text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-600 hover:to-purple-600"
                             >
                                 <a
                                     href="https://drive.google.com/file/d/1Wjrz5OZZeqFe_ifLKxypKMc54AYJ4b4E/view?usp=sharing"

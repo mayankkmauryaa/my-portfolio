@@ -20,8 +20,8 @@ const ProjectsSection = () => {
                 {
                     title: 'Personal Portfolio Website',
                     description:
-                        'Built a responsive and animated personal portfolio using React.js, TypeScript, Tailwind CSS, and Framer Motion. Hosted on Vercel.',
-                    tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+                        'Built a responsive and animated personal portfolio using React.js. Hosted on Vercel.',
+                    tags: ['React.js'],
                 },
                 {
                     title: 'Weather Dashboard',
@@ -34,9 +34,21 @@ const ProjectsSection = () => {
                     description:
                         'Redesigned a fictional brand website using Next.js and styled-components with AI-generated content, layout, and branding.',
                     tags: ['Next.js', 'styled-components', 'SEO', 'AI Tools'],
-                },
-            ],
+                }
+            ]
         },
+        // {
+        //     title: 'My day2day tasks',
+        //     key: 'personal',
+        //     projects: [
+        //         {
+        //             title: 'Personal Portfolio Website',
+        //             description:
+        //                 'Built a responsive and animated personal portfolio using React.js, TypeScript, Tailwind CSS, and Framer Motion. Hosted on Netlify.',
+        //             tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+        //         },
+        //     ],
+        // },
         {
             title: 'Full Stack & Real-time Applications',
             key: 'fullstack',
@@ -52,8 +64,8 @@ const ProjectsSection = () => {
                     description:
                         'Revamped Amazon’s homepage using Next.js and styled-components, replicating the layout with SEO, accessibility, and mobile responsiveness.',
                     tags: ['Next.js', 'styled-components', 'Responsive UI'],
-                },
-            ],
+                }
+            ]
         },
         {
             title: 'AI & Career Tools',
@@ -70,8 +82,8 @@ const ProjectsSection = () => {
                     description:
                         'A tool that analyzes resumes and job descriptions to calculate matching percentage using NLP and cosine similarity.',
                     tags: ['Python', 'NLP', 'Streamlit'],
-                },
-            ],
+                }
+            ]
         },
         {
             title: 'Python + MySQL Management Systems',
@@ -88,8 +100,8 @@ const ProjectsSection = () => {
                     description:
                         'A simple inventory management CLI for small businesses using Python and persistent MySQL backend.',
                     tags: ['Python', 'MySQL', 'Database'],
-                },
-            ],
+                }
+            ]
         },
         {
             title: 'Hardware & Robotics',
@@ -106,27 +118,27 @@ const ProjectsSection = () => {
                     description:
                         'Follows a path using IR sensors. Tuned with PID control logic for accuracy and curve handling.',
                     tags: ['Embedded C', 'Robotics', 'PID'],
-                },
-            ],
-        },
+                }
+            ]
+        }
     ];
 
     const [activeGroupKey, setActiveGroupKey] = useState('internship');
     const activeGroup = projectGroups.find((group) => group.key === activeGroupKey);
 
     return (
-        <section id="projects" className="section-padding bg-white">
-            <div className="container mx-auto px-4">
-                <h2 className="section-title mb-8 text-3xl font-bold text-gray-800">Projects</h2>
+        <section id="projects" className="section-padding bg-white dark:bg-gray-900">
+            <div className="max-w-8xl mx-auto container mx-auto px-4">
+                <h2 className="section-title mb-8 text-3xl font-bold text-gray-800 dark:text-white">Projects</h2>
 
                 {/* Filters */}
-                <div className="flex flex-wrap gap-3 mb-6">
+                <div className="max-w-6xl mx-auto flex flex-wrap gap-3 mb-6">
                     {projectGroups.map((group) => (
                         <button
                             key={group.key}
                             onClick={() => setActiveGroupKey(group.key)}
-                            className={`px-4 py-2 rounded-full text-sm font-semibold border transition ${activeGroupKey === group.key
-                                ? 'bg-blue-600 text-white border-blue-600'
+                            className={`dark:bg-blue-100 dark:text-blue-400 px-4 py-2 rounded-full text-sm font-semibold border transition ${activeGroupKey === group.key
+                                ? 'dark:bg-blue-600 dark:text-white bg-blue-600 text-white border-blue-600'
                                 : 'bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200'
                                 }`}
                         >
@@ -138,14 +150,14 @@ const ProjectsSection = () => {
                 {/* Active Group */}
                 {activeGroup && (
                     <div className="mb-12">
-                        <h3 className="text-2xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-2">
+                        <h3 className="dark:text-gray-300 max-w-6xl mx-auto text-2xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-2">
                             {activeGroup.title}
                         </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {activeGroup.projects.map((project, i) => (
                                 <Card
                                     key={i}
-                                    className="hover:shadow-md transition-shadow duration-300"
+                                    className="dark:bg-blue-100 hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1"
                                     style={{ transitionDelay: `${i * 40}ms` }}
                                 >
                                     <CardHeader>
@@ -160,7 +172,7 @@ const ProjectsSection = () => {
                                                 <Badge
                                                     key={j}
                                                     variant="secondary"
-                                                    className="bg-blue-100 text-blue-800 hover:bg-blue-200"
+                                                    className="dark:bg-blue-200 bg-blue-100 text-blue-800 hover:bg-blue-300"
                                                 >
                                                     {tag}
                                                 </Badge>

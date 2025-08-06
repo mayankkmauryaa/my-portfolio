@@ -293,15 +293,15 @@ const EducationSection = () => {
     const activeGroup = certifications.find((group) => group.key === activeGroupKey);
 
     return (
-        <section id="education" className="section-padding bg-blue-50 py-16" >
+        <section id="education" className="section-padding bg-blue-50 py-16 dark:bg-gray-800" >
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+                <h2 className="dark:text-white text-3xl font-bold text-center mb-12 text-gray-800">
                     🎓 Education & Certifications
                 </h2>
 
                 {/* ──────────────── Education Section ──────────────── */}
-                <div className="max-w-4xl mx-auto mb-16">
-                    <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-blue-800">
+                <div className="max-w-8xl mx-auto mb-16">
+                    <h3 className="dark:text-blue-400 text-2xl font-semibold mb-6 flex items-center gap-2 text-blue-800">
                         <GraduationCap className="h-6 w-6" /> Education
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -313,7 +313,7 @@ const EducationSection = () => {
                                 rel="noopener noreferrer"
                                 className="block"
                             >
-                                <Card className="hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
+                                <Card className="dark:bg-blue-100 hover:shadow-xl border border-blue-300 transition-transform transform hover:-translate-y-1">
                                     <CardHeader>
                                         <CardTitle className="text-xl">{edu.degree}</CardTitle>
                                     </CardHeader>
@@ -326,22 +326,22 @@ const EducationSection = () => {
                         ))}
                     </div>
                 </div>
-                <div className="max-w-4xl mx-auto mb-16">
+                <div className="max-w-8xl mx-auto mb-16">
                     {/* ──────────────── Certifications Section ──────────────── */}
-                    <div className="max-w-6xl mx-auto">
-                        <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-blue-800">
+                    <div className="max-w-8xl mx-auto">
+                        <h3 className="dark:text-blue-400 text-2xl font-semibold mb-6 flex items-center gap-2 text-blue-800">
                             <Award className="h-6 w-6" /> Certifications
                         </h3>
 
                         {/* Filters */}
-                        <div className="flex flex-wrap gap-3 mb-6">
+                        <div className="max-w-2xl mx-auto flex flex-wrap gap-3 mb-6">
                             {certifications.map((group) => (
                                 <button
                                     key={group.key}
                                     onClick={() => setActiveGroupKey(group.key)}
-                                    className={`px-4 py-2 rounded-full text-sm font-semibold border transition ${activeGroupKey === group.key
-                                        ? 'bg-blue-600 text-white border-blue-600'
-                                        : 'bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200'
+                                    className={`dark:bg-blue-100 dark:text-blue-400 px-4 py-2 rounded-full text-sm font-semibold border transition ${activeGroupKey === group.key
+                                        ? 'bg-blue-600 dark:bg-blue-600 dark:text-white text-white border-blue-600'
+                                        : 'dark:bg-blue-100 bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200'
                                         }`}
                                 >
                                     {group.title}
@@ -352,10 +352,10 @@ const EducationSection = () => {
                         {/* Active Group */}
                         {activeGroup && (
                             <div className="mb-12">
-                                <h3 className="text-2xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-2">
+                                <h3 className="dark:text-gray-300 text-2xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-2">
                                     {activeGroup.title}
                                 </h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     {activeGroup.certificate.map((cert, index) => (
                                         <a
                                             key={index}
@@ -364,7 +364,7 @@ const EducationSection = () => {
                                             rel="noopener noreferrer"
                                             className="block"
                                         >
-                                            <Card className="hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
+                                            <Card className="dark:bg-blue-100 hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
                                                 <CardContent className="p-6">
                                                     <h4 className="font-semibold text-lg text-gray-800">{cert.title}</h4>
                                                     <p className="text-sm text-gray-600">
