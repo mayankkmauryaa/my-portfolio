@@ -51,6 +51,7 @@ const AboutSection = () => {
                         {/* Tech Stack Icons */}
                         <div className="flex gap-4 m-8 items-center flex-wrap">
                             <h3 className="text-2xl font-bold dark:text-white">My Preferred Languages : </h3>
+                            <div className="flex gap-4">
                             <img src="icons\html.svg" alt="HTML" className="w-8 h-8" />
                             <img src="icons\css.svg" alt="CSS" className="w-8 h-8" />
                             <img src="icons\js.svg" alt="JavaScript" className="w-8 h-8" />
@@ -59,6 +60,7 @@ const AboutSection = () => {
                             <img src="/icons/java.svg" alt="Java" className="w-8 h-8" />
                             <img src="/icons/python.svg" alt="Java" className="w-8 h-8" />
                             <img src="/icons/mysql.svg" alt="Java" className="w-12 h-12" />
+                            </div>
                         </div>
                     </Card>
                     <Card className="reveal dark:bg-gray-800/70 dark:border-gray-700" style={{ transitionDelay: "100ms" }}>
