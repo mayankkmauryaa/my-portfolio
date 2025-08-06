@@ -164,7 +164,7 @@ const ProjectsSection = () => {
                                         <CardTitle>{project.title}</CardTitle>
                                     </CardHeader>
                                     <CardContent>
-                                        <CardDescription className="text-base">{project.description}</CardDescription>
+                                        <CardDescription className="text-base dark:text-gray-800">{project.description}</CardDescription>
                                     </CardContent>
                                     <CardFooter>
                                         <div className="flex flex-wrap gap-2">
