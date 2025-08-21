@@ -37,13 +37,14 @@ const ThemeToggle = () => {
             <Toggle
                 pressed={isDark}
                 onPressedChange={toggleTheme}
-                className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-md border border-gray-700 shadow-lg hover:shadow-purple-400/20 transition-all duration-300"
+                className="bg-white/30 w-12 h-12 rounded-full backdrop-blur-md shadow-lg hover:shadow-purple-400/20 transition-all duration-300
+                "
                 aria-label="Toggle theme"
             >
                 {isDark ? (
                     <Sun className="w-5 h-5 text-yellow-400 animate-pulse" />
                 ) : (
-                    <Moon className="w-5 h-5 text-blue-400" />
+                    <Moon className="w-5 h-5 text-blue-400 animate-pulse" />
                 )}
             </Toggle>
         </div>

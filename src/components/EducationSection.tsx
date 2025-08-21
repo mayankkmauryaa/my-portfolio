@@ -1,4 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { GraduationCap, Award } from 'lucide-react';
 import { useState } from 'react';
 
@@ -29,7 +30,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: '7VWKM6F16EJD',
                     url: 'https://www.coursera.org/account/accomplishments/specialization/7VWKM6F16EJD',
-                    skills: [],
+                    skills: ['GitHub', 'Version Control', 'Git (Version Control System)', 'User Interface and User Experience (UI/UX) Design', 'Jest (JavaScript Testing Framework)', 'JavaScript', 'Usability Testing', 'User Research', 'React.js', 'UI/UX Research', 'User Experience Design', 'Pseudocode'],
                 },
                 {
                     title: 'Introduction to Front-End Development',
@@ -37,7 +38,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: 'LAY704S41B8I',
                     url: 'https://www.coursera.org/account/accomplishments/verify/LAY704S41B8I',
-                    skills: ['HTML', 'CSS', 'Microsoft Visual Studio Code'],
+                    skills: ['Web Development Tools', 'Cascading Style Sheets (CSS)', 'User Interface (UI)', 'Hypertext Markup Language (HTML)', 'General Networking', 'Web Development', 'Bootstrap (Front-End Framework)', 'Front-End Web Development', 'Responsive Web Design', 'Web Design', 'HTML and CSS', 'Javascript'],
                 },
                 {
                     title: 'Programming with JavaScript',
@@ -45,7 +46,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: 'J4VQ05NBYRCS',
                     url: 'https://www.coursera.org/account/accomplishments/verify/J4VQ05NBYRCS',
-                    skills: ['JavaScript'],
+                    skills: ['Computer Programming', 'Unit Testing', 'Programming Principles', 'Jest (JavaScript Testing Framework)', 'Web Applications', 'Functional Design', 'JavaScript', 'Event-Driven Programming', 'Scripting', 'Node.JS', 'Object Oriented Programming (OOP)', 'Package and Software Management'],
                 },
                 {
                     title: 'Version Control',
@@ -53,7 +54,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: 'RSNLFP46RPZL',
                     url: 'https://www.coursera.org/account/accomplishments/verify/RSNLFP46RPZL',
-                    skills: [],
+                    skills: ['Command-Line Interface', 'Github', 'Software Development', 'Version Control', 'Git (Version Control System)', 'File Management', 'Software Versioning', 'Software Configuration Management', 'Unix Commands', 'Linux', 'Software Development Methodologies', 'Web Development'],
                 },
                 {
                     title: 'HTML and CSS in Depth',
@@ -61,7 +62,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: 'GJSNRF6NFQGS',
                     url: 'https://www.coursera.org/account/accomplishments/verify/GJSNRF6NFQGS',
-                    skills: ['HTML', 'CSS'],
+                    skills: ['Software Testing', 'Server Side', 'Data Validation', 'Semantic Web', 'Hypertext Markup Language (HTML)', 'Web Design', 'JavaScript', 'Web Content Accessibility Guidelines', 'Cascading Style Sheets (CSS)', 'Animations', 'Debugging', 'Front-End Web Development'],
                 },
                 {
                     title: 'React Basics',
@@ -69,7 +70,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: '3VDZ0AOMA2HB',
                     url: 'https://www.coursera.org/account/accomplishments/verify/3VDZ0AOMA2HB',
-                    skills: ['React.js'],
+                    skills: ['Event-Driven Programming', 'React.js', 'Cascading Style Sheets (CSS)', 'Hypertext Markup Language (HTML)', 'UI Components', 'Front-End Web Development', 'JavaScript Frameworks', 'Web Applications', 'Javascript', 'Application development'],
                 },
                 {
                     title: 'Advanced React',
@@ -77,7 +78,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: 'CZS8XG2W1SKZ',
                     url: 'https://www.coursera.org/account/accomplishments/verify/CZS8XG2W1SKZ',
-                    skills: ['React.js'],
+                    skills: ['React.js', 'Integration Testing', 'Test Automation', 'Unit Testing', 'Jest (JavaScript Testing Framework)', 'UI Components', 'Front-End Web Development', 'JavaScript Frameworks', 'Software Design Patterns', 'Javascript'],
                 },
                 {
                     title: 'Principles of UX/UI Design',
@@ -85,7 +86,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: 'ESUF7B0L0A7M',
                     url: 'https://www.coursera.org/account/accomplishments/verify/ESUF7B0L0A7M',
-                    skills: [],
+                    skills: ['Prototyping', 'Figma (Design Software)', 'User Interface and User Experience (UI/UX) Design', 'Wireframing', 'Web Design', 'Usability Testing', 'User Research', 'UI/UX Research', 'Design Elements And Principles', 'Usability', 'User Experience Design', 'Persona (User Experience)'],
                 },
                 {
                     title: 'Front-End Developer Capstone',
@@ -93,7 +94,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: 'P6IYIYX4XPSM',
                     url: 'https://www.coursera.org/account/accomplishments/verify/P6IYIYX4XPSM',
-                    skills: [],
+                    skills: ['React.js', 'Usability', 'Data Validation', 'Semantic Web', 'Git (Version Control System)', 'Wireframing', 'Front-End Web Development', 'Responsive Web Design', 'User Experience', 'HTML and CSS', 'Web Design and Development', 'JavaScript'],
                 },
                 {
                     title: 'Coding Interview Preparation',
@@ -101,7 +102,7 @@ const EducationSection = () => {
                     issuer: 'Meta',
                     credentialId: 'G3Y1L991512G',
                     url: 'https://www.coursera.org/account/accomplishments/verify/G3Y1L991512G',
-                    skills: [],
+                    skills: ['Computational Thinking', 'Algorithms', 'Computational Logic', 'Programming Principles', 'Technical Communication', 'Program Development', 'Theoretical Computer Science', 'Computer Science', 'Object Oriented Programming (OOP)', 'Pseudocode', 'Data Structures', 'Communication'],
                 }
             ]
         },
@@ -115,7 +116,7 @@ const EducationSection = () => {
                     issuer: 'Coursera',
                     credentialId: '',
                     url: 'https://www.credly.com/badges/de3f15da-9cb5-4435-9590-4ec30ca10c55/linked_in_profile',
-                    skills: [],
+                    skills: ['Coding Interview Skills', 'CSS', 'Editing Images', 'HTML', 'JavaScript ES6', 'React.js', 'Version Control', 'Wireframes'],
                 }
             ]
         },
@@ -179,6 +180,44 @@ const EducationSection = () => {
                     url: 'https://partner.cloudskillsboost.google/public_profiles/1d18146a-9ef3-4f50-b581-4b495ed8a4b1/badges/17030738?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share',
                     skills: [],
                 }
+            ]
+        },
+        {
+            title: 'Google Cloud',
+            key: 'cloud',
+            certificate: [
+                {
+                    title: 'Introduction to Generative AI',
+                    date: 'Aug 2025',
+                    issuer: 'Google Cloud',
+                    credentialId: '8T48OJZ8PABI',
+                    url: 'https://www.coursera.org/account/accomplishments/verify/8T48OJZ8PABI',
+                    skills: ['Generative AI', 'Google Cloud Platform', 'Machine Learning Methods', 'Artificial Intelligence', 'Application Development'],
+                },
+                {
+                    title: 'Introduction to Large Language Models',
+                    date: 'Aug 2025',
+                    issuer: 'Google Cloud',
+                    credentialId: 'J4GSLKTO1SQJ',
+                    url: 'https://www.coursera.org/account/accomplishments/verify/J4GSLKTO1SQJ',
+                    skills: ['Prompt Engineering', 'Performance Tuning', 'Generative AI', 'Google Cloud Platform', 'Large Language Modeling'],
+                },
+                {
+                    title: 'Introduction to Responsible AI',
+                    date: 'Aug 2025',
+                    issuer: 'Google Cloud',
+                    credentialId: '9DGOVRGGJB1Z',
+                    url: 'https://www.coursera.org/account/accomplishments/verify/9DGOVRGGJB1Z',
+                    skills: ['Organizational Effectiveness', 'Data Ethics', 'Business Ethics', 'Artificial Intelligence', 'Accountability'],
+                },
+                {
+                    title: 'Responsible AI: Applying AI Principles with Google Cloud',
+                    date: 'Aug 2025',
+                    issuer: 'Google Cloud',
+                    credentialId: '41MZWK90QNKF',
+                    url: 'https://www.coursera.org/account/accomplishments/verify/41MZWK90QNKF',
+                    skills: ['Data Ethics', 'Generative AI', 'Regulatory Compliance', 'Compliance Training', 'Business Ethics', 'Accountability', 'Artificial Intelligence', 'Governance'],
+                },
             ]
         },
         {
@@ -356,34 +395,59 @@ const EducationSection = () => {
                                     {activeGroup.title}
                                 </h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                    {activeGroup.certificate.map((cert, index) => (
-                                        <a
-                                            key={index}
-                                            href={cert.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="block"
-                                        >
-                                            <Card className="dark:bg-blue-100 hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
-                                                <CardContent className="p-6">
-                                                    <h4 className="font-semibold text-lg text-gray-800">{cert.title}</h4>
-                                                    <p className="text-sm text-gray-600">
-                                                        {cert.issuer} • {cert.date}
-                                                    </p>
-                                                    <p className="text-xs text-green-600 mt-1">
-                                                        Credential ID: {cert.credentialId || '—'}
-                                                    </p>
-                                                    <p className="text-sm text-blue-700 mt-2">
-                                                        {cert.skills?.join(', ') || '—'}
-                                                    </p>
-                                                    <p className="text-sm text-blue-500 mt-2 underline">
-                                                        View Certificate
-                                                    </p>
-                                                </CardContent>
-                                            </Card>
-                                        </a>
-                                    ))}
+                                    {activeGroup.certificate.map((cert, index) => {
+                                        const CardWrapper = cert.url
+                                            ? ({ children }) => (
+                                                <a href={cert.url} target="_blank" rel="noopener noreferrer" className="block">
+                                                    {children}
+                                                </a>
+                                            )
+                                            : ({ children }) => <div className="block">{children}</div>;
+
+                                        return (
+                                            <CardWrapper key={index}>
+                                                <Card className="dark:bg-gray-900 hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
+                                                    <CardContent className="p-6">
+                                                        <h4 className="font-semibold text-lg text-gray-800 dark:text-gray-200">
+                                                            {cert.title}
+                                                        </h4>
+                                                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                                                            {cert.issuer} • {cert.date}
+                                                        </p>
+                                                        <p className="text-xs text-green-600 mt-1">
+                                                            Credential ID: {cert.credentialId || '—'}
+                                                        </p>
+                                                        <p className="text-sm text-blue-500 mt-2 underline">
+                                                            {cert.url ? 'View Certificate' : 'No Certificate Link'}
+                                                        </p>
+                                                    </CardContent>
+                                                    {cert.skills?.length > 0 && (
+                                                        <CardFooter>
+                                                            <div className="flex flex-wrap gap-2">
+                                                                {cert.skills.slice(0, 3).map((tag, j) => (
+                                                                    <Badge
+                                                                        key={j}
+                                                                        variant="secondary"
+                                                                        className="dark:bg-blue-200 bg-blue-100 text-blue-800 hover:bg-blue-300"
+                                                                    >
+                                                                        {tag}
+                                                                    </Badge>
+                                                                ))}
+                                                                {cert.skills.length > 3 && (
+                                                                    <span className="text-sm text-gray-500">
+                                                                        +{cert.skills.length - 3} skills
+                                                                    </span>
+                                                                )}
+                                                            </div>
+                                                        </CardFooter>
+                                                    )}
+
+                                                </Card>
+                                            </CardWrapper>
+                                        );
+                                    })}
                                 </div>
+
                             </div>
                         )}
                     </div>

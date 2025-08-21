@@ -182,13 +182,19 @@ const ContactSection = () => {
             {showScrollButton && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-4 md:bottom-8 left-4 md:left-8 z-50 bg-white text-blue-600 hover:bg-blue-100 shadow-lg p-3 rounded-full transition-colors border border-blue-200"
-                    aria-label="Scroll to top"
-                >
-                    <ArrowUp className="w-5 h-5" />
-                </button>
-            )}
-        </div>
+                    className="fixed bottom-4 md:bottom-8 left-4 md:left-8 z-50 
+                        bg-white/30 backdrop-blur-md
+                        shadow-lg p-3 rounded-full transition-all duration-300 
+                        hover:shadow-purple-400/20
+                        "
+            aria-label="Scroll to top"
+>
+            <ArrowUp className="w-5 h-5 animate-pulse text-blue-600" />
+        </button>
+
+    )
+}
+        </div >
     );
 };
 
