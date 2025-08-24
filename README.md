@@ -2,10 +2,11 @@
 
 ## Project info
 **See here:** [Deployed](https://mayankmaurya.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/55cbbcbb-5592-4a03-bf13-8de0db3e2b99/deploy-status)](https://app.netlify.com/projects/mayankmaurya/deploys)
+## How can I edit this code?
 ##
 **URL**: [Github](https://github.com/mayankkmauryaa/my-portfolio)
-
-## How can I edit this code?
 
 There are several ways of editing your application.
 
