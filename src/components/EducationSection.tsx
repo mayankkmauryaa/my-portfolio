@@ -111,12 +111,26 @@ const EducationSection = () => {
             key: 'course',
             certificate: [
                 {
-                    title: 'Meta Front-End Developer Certificate',
+                    title: 'Meta Front-End Developer Certificate Bagde',
                     date: 'Jul 2025',
                     issuer: 'Coursera',
                     credentialId: '',
                     url: 'https://www.credly.com/badges/de3f15da-9cb5-4435-9590-4ec30ca10c55/linked_in_profile',
                     skills: ['Coding Interview Skills', 'CSS', 'Editing Images', 'HTML', 'JavaScript ES6', 'React.js', 'Version Control', 'Wireframes'],
+                },
+                {
+                    title: 'Python Development with ChatGPT: Fullstack App Development',
+                    date: 'Aug 2025',
+                    issuer: 'Coursera',
+                    credentialId: 'QBXTHMGPIB37',
+                    url: '',
+                    skills: [
+                        'Prompt Engineering',
+                        'Generative AI',
+                        'Web Development',
+                        'Full-Stack Development',
+                        'Python (Programming Language)'
+                    ]
                 }
             ]
         },
@@ -124,6 +138,88 @@ const EducationSection = () => {
             title: 'Google',
             key: 'google',
             certificate: [
+                {
+                    title: 'Gmail',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17490200',
+                    url: '',
+                    skills: [],
+                },
+                {
+                    title: 'Google Calendar',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17489830',
+                    url: '',
+                    skills: [],
+                },
+                {
+                    title: 'Google Sheets',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17489702',
+                    url: '',
+                    skills: [],
+                },
+                {
+                    title: 'Google Sheets - Advanced Topics',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17489998',
+                    url: '',
+                    skills: [],
+                },
+                {
+                    title: 'Introduction to Generative AI',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17482413',
+                    url: '',
+                    skills: ['Generative AI'],
+                },
+                {
+                    title: 'Introduction to Image Generation',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17482994',
+                    url: '',
+                    skills: [],
+                },
+                {
+                    title: 'Introduction to Large Language Models',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17482679',
+                    url: '',
+                    skills: ['Generative AI', 'Large Language Models (LLM)'],
+                },
+                {
+                    title: 'Introduction to Responsible AI',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17482585',
+                    url: '',
+                    skills: ['Artificial Intelligence (AI)', 'Generative AI'],
+                },
+                {
+                    title: 'Planetary Scale Earth Observation with Google Earth Engine',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17489381',
+                    url: '',
+                    skills: [],
+                },
+                {
+                    title: 'Responsible AI: Applying AI Principles with Google Cloud',
+                    date: 'Aug 2025',
+                    issuer: 'Google',
+                    credentialId: '17482753',
+                    url: '',
+                    skills: [],
+                },
+
+
                 {
                     title: 'Digital Transformation with Google Cloud',
                     date: 'Mar 2025',
@@ -179,11 +275,11 @@ const EducationSection = () => {
                     credentialId: '17030738',
                     url: 'https://partner.cloudskillsboost.google/public_profiles/1d18146a-9ef3-4f50-b581-4b495ed8a4b1/badges/17030738?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share',
                     skills: [],
-                }
+                },
             ]
         },
         {
-            title: 'Google Cloud',
+            title: 'Google Cloud Skills Boost',
             key: 'cloud',
             certificate: [
                 {
@@ -390,7 +486,7 @@ const EducationSection = () => {
 
                         {/* Active Group */}
                         {activeGroup && (
-                            <div className="mb-12">
+                            <div className="mb-12 ">
                                 <h3 className="dark:text-gray-300 text-2xl font-semibold text-gray-700 mb-6 border-b border-gray-300 pb-2">
                                     {activeGroup.title}
                                 </h3>
@@ -406,7 +502,7 @@ const EducationSection = () => {
 
                                         return (
                                             <CardWrapper key={index}>
-                                                <Card className="dark:bg-gray-900 hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
+                                                <Card className="h-full flex flex-col dark:bg-gray-900 hover:shadow-xl border border-blue-200 transition-transform transform hover:-translate-y-1">
                                                     <CardContent className="p-6">
                                                         <h4 className="font-semibold text-lg text-gray-800 dark:text-gray-200">
                                                             {cert.title}

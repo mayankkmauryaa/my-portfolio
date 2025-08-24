@@ -55,8 +55,9 @@ const HeroSection = () => {
                                 className="text-lg border-gray-600 text-gray-200 hover:text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-600 hover:to-purple-600"
                             >
                                 <a
-                                    href="https://drive.google.com/file/d/1CrlSjdGHs8GpRwzY97FbOwO79tOZOfvP/view?usp=sharing"
-                                    // href="https://docs.google.com/document/d/1h-BCHXpvqDoLrYgdIlF3Mj7lncHszBDB/edit?usp=sharing&ouid=102006936980537279310&rtpof=true&sd=true"
+                                    href=
+                                    "https://drive.google.com/file/d/1Y_m01GvlhEAFf-yPOkOkd_B6GLYCSRQr/view?usp=sharing"
+                                    // "https://docs.google.com/document/d/1zcM7Pxo1MTjP0DrKQShENEOft8EP7Tvi/edit"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

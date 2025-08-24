@@ -128,41 +128,53 @@ const AboutSection = () => {
                                                 </div>
 
                                                 <div className="mt-4">
-                                                    <div className="flex gap-3 flex-wrap justify-center">
-                                                        <div className="flex flex-col items-center">
-                                                            <Avatar className="w-10 h-10 border-2 border-purple-400">
+                                                    <div className="flex flex-wrap justify-center gap-6">
+                                                        <div className="flex flex-col items-center min-w-[100px] text-center">
+                                                            <Avatar className="w-12 h-12 border-2 border-yellow-400">
+                                                                <AvatarImage src="https://assets.leetcode.com/static_assets/marketing/365_new.gif" />
+                                                                <AvatarFallback className="bg-green-500/20 text-green-700">LC</AvatarFallback>
+                                                            </Avatar>
+                                                            <span className="text-xs mt-2 dark:text-gray-400">365+ Days Badge 2025</span>
+                                                        </div>
+
+                                                        <div className="flex flex-col items-center min-w-[100px] text-center">
+                                                            <Avatar className="w-12 h-12 border-2 border-purple-400">
                                                                 <AvatarImage src="https://assets.leetcode.com/static_assets/others/200.gif" />
                                                                 <AvatarFallback className="bg-green-500/20 text-green-700">LC</AvatarFallback>
                                                             </Avatar>
-                                                            <span className="text-xs mt-1 dark:text-gray-400">200 Days Badge 2025</span>
+                                                            <span className="text-xs mt-2 dark:text-gray-400">200 Days Badge 2025</span>
                                                         </div>
-                                                        <div className="flex flex-col items-center">
-                                                            <Avatar className="w-10 h-10 border-2 border-blue-400">
+
+                                                        <div className="flex flex-col items-center min-w-[100px] text-center">
+                                                            <Avatar className="w-12 h-12 border-2 border-blue-400">
                                                                 <AvatarImage src="https://assets.leetcode.com/static_assets/others/25100.gif" />
                                                                 <AvatarFallback className="bg-green-500/20 text-green-700">LC</AvatarFallback>
                                                             </Avatar>
-                                                            <span className="text-xs mt-1 dark:text-gray-400">100 Days Badge 2025</span>
+                                                            <span className="text-xs mt-2 dark:text-gray-400">100 Days Badge 2025</span>
                                                         </div>
-                                                        <div className="flex flex-col items-center">
-                                                            <Avatar className="w-10 h-10 border-2 border-lime-300">
+
+                                                        <div className="flex flex-col items-center min-w-[100px] text-center">
+                                                            <Avatar className="w-12 h-12 border-2 border-lime-300">
                                                                 <AvatarImage src="https://assets.leetcode.com/static_assets/others/2550.gif" />
                                                                 <AvatarFallback className="bg-purple-500/20 text-purple-700">LC</AvatarFallback>
                                                             </Avatar>
-                                                            <span className="text-xs mt-1 dark:text-gray-400">50 Days Badge 2025</span>
+                                                            <span className="text-xs mt-2 dark:text-gray-400">50 Days Badge 2025</span>
                                                         </div>
-                                                        <div className="flex flex-col items-center">
-                                                            <Avatar className="w-10 h-10 border-2 border-blue-300">
+
+                                                        <div className="flex flex-col items-center min-w-[100px] text-center">
+                                                            <Avatar className="w-12 h-12 border-2 border-blue-300">
                                                                 <AvatarImage src="https://assets.leetcode.com/static_assets/marketing/2024-100-new.gif" />
                                                                 <AvatarFallback className="bg-yellow-500/20 text-yellow-700">LC</AvatarFallback>
                                                             </Avatar>
-                                                            <span className="text-xs mt-1 dark:text-gray-400">100 Days Badge 2024</span>
+                                                            <span className="text-xs mt-2 dark:text-gray-400">100 Days Badge 2024</span>
                                                         </div>
-                                                        <div className="flex flex-col items-center">
-                                                            <Avatar className="w-10 h-10 border-2 border-green-500">
+
+                                                        <div className="flex flex-col items-center min-w-[100px] text-center">
+                                                            <Avatar className="w-12 h-12 border-2 border-green-500">
                                                                 <AvatarImage src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif" />
                                                                 <AvatarFallback className="bg-blue-500/20 text-blue-700">LC</AvatarFallback>
                                                             </Avatar>
-                                                            <span className="text-xs mt-1 dark:text-gray-400">50 Days Badge 2024</span>
+                                                            <span className="text-xs mt-2 dark:text-gray-400">50 Days Badge 2024</span>
                                                         </div>
                                                     </div>
                                                 </div>
